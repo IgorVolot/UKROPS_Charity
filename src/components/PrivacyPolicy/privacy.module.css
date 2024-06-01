@@ -1,0 +1,34 @@
+/*
+ * /
+ *  *  *
+ *  *  *   ************************************************************************
+ *  *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *  *   ************************************************************************
+ *  *  *
+ * /
+ */
+
+
+.block {
+    margin: 2rem auto 6rem auto;
+
+    max-width: 600px;
+    font-size: 1em;
+}
+
+.text {
+    margin: 1rem auto;
+}
+
+@media screen and (min-width: 1450px) {
+
+    .block {
+        margin: 4rem auto 8rem auto;
+        max-width: 1000px;
+        font-size: 1.2em;
+    }
+    .text {
+        margin: 1.5rem auto;
+    }
+
+}

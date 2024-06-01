@@ -1,0 +1,55 @@
+/*
+ * /
+ *  *  *
+ *  *  *   ************************************************************************
+ *  *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *  *   ************************************************************************
+ *  *  *
+ * /
+ */
+
+
+.banner {
+    /*background-color: rgba(46, 81, 136, 0.79);*/
+    /*background-color: rgba(181, 207, 239, 0.71);*/
+    background-color: rgba(173, 186, 227, 0.32);
+
+    margin-top: 20px;
+}
+
+.title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2em;
+    text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);
+}
+
+.img {
+    margin: 15px auto;
+}
+
+
+/* Adaptive styles for screens up to 770px */
+@media screen and (max-width: 770px) {
+    .title {
+        font-size: 1.2em;
+    }
+
+    .img {
+        flex-direction: column;
+    }
+}
+
+
+/* Adaptive styles for screens more then 1020px */
+@media screen and (min-width: 1020px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .img {
+        /*margin: auto;*/
+        width: 32%;
+    }
+}

@@ -1,0 +1,60 @@
+/*/
+ *  *
+ *  *   ************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *   ************************************************************************
+ *  *
+/*/
+
+.email {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: initial;
+    font-size: 1.5em;
+    margin: 1em auto 0.5em auto;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);
+}
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mailIcon {
+    width: 80px;
+    height: 80px;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+.btn {
+    width: 160px;
+    display: block;
+    margin: 3rem auto;
+    background-color: #01016b;
+    color: burlywood;
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(2, 56, 27);
+    color: white;
+}
+
