@@ -6,9 +6,9 @@
  *  *
 /*/
 
-import leo from "../../assets/founderImage/img_leo-min.jpeg"
-import anna from "../../assets/founderImage/img_anna-min.jpeg"
-import justas from "../../assets/founderImage/img_justas-min.jpeg"
+import leo from "../../assets/founderImage/img_leo.jpeg"
+import anna from "../../assets/founderImage/img_anna.jpeg"
+import justas from "../../assets/founderImage/img_justas.jpeg"
 import { Col, Row } from "react-bootstrap"
 import about_us from "./about_us.module.css"
 import { Link } from "react-router-dom"

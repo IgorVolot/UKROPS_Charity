@@ -12,7 +12,7 @@ import cc_cert from "../../assets/logo/charity-commission_logo.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faLinkedin, faSquareInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import img_ukrops from "../../assets/logo/img_ukrops_small.jpg"
+import img_ukrops from "../../assets/logo/img_ukrops.jpg"
 import Modal from "react-bootstrap/Modal"
 import Button from "react-bootstrap/Button"
 
