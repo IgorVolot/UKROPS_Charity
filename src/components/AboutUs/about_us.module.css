@@ -1,0 +1,135 @@
+/*/
+ *  *
+ *  *   ************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *   ************************************************************************
+ *  *
+/*/
+
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+}
+
+/*.img {*/
+/*    max-width: 50%;*/
+/*    margin: 1rem;*/
+/*}*/
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 1441px) {
+    .column {
+        margin: 0 auto;
+        width: 75%;
+    }
+
+}
+
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-height: 720px;
+    /*align-content: center;*/
+
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container > p {
+    color: #2c3034;
+}
+
+.text {
+    text-align: start;
+    font-family: "Cormorant Garamond", serif;
+    color: #2c3034;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    font-family: "Academy Engraved LET";
+}
+
+.signature {
+    font-family: "WindSong", cursive;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #333333;
+}
+
+/* Donate button */
+.btn {
+    width: 160px;
+    display: block;
+    margin: 3rem auto;
+    background-color: #01016b;
+    color: burlywood;
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(2, 56, 27);
+    color: white;
+}
+
+
+.button {
+    background-color: #01016b;
+    font-style: oblique;
+    color: #ffffff;
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 20px 5px 20px 5px;
+    cursor: pointer;
+}
+
+
+.button > a {
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1681px) {
+    .logo {
+        max-width: 40%;
+    }
+}
+
+
+

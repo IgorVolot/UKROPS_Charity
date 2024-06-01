@@ -1,0 +1,96 @@
+/*
+ * /
+ *  *  *
+ *  *  *   ************************************************************************
+ *  *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *  *   ************************************************************************
+ *  *  *
+ * /
+ */
+
+
+/* The navigation bar */
+.navbar {
+    border-top: #ffffff ridge;
+    border-bottom: #ffffff groove;
+    background-color: #ffffff;
+    font-family: "Abril Fatface", serif;
+    font-size: 1.2em;
+    background-image: url("../../assets/background/header-background.jpg");
+    background-size: cover;
+    opacity: 0.95;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding-right: 14px;
+    box-shadow: 2px 2px 5px rgba(102, 150, 117, 0.93);
+    position: fixed;
+    transition: top 0.3s;
+}
+
+.navbarHidden {
+    top: -130px !important; /* Adjust this value based on the height of your Navbar */
+    transition: all 0.3s ease;
+}
+
+.navLink {
+    color: rgb(238, 209, 176); /* !important! */
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.aboutUs {
+    padding: 0;
+}
+
+.mission {
+    padding-left: 10px;
+}
+
+.menu {
+    background-color: rgba(164, 182, 194, 0.82);
+}
+
+.navLink:hover {
+    transition: all 0.3s ease;
+    color: rgba(255, 249, 186, 0.57); /* !important! */
+}
+
+.navLink:global.active {
+    color: whitesmoke;
+}
+
+.navbarToggler {
+    background-color: rgb(232, 224, 216);
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px){
+    #homeLink {
+        padding-top: 15px;
+    }
+
+    .navLink {
+        padding-bottom: 5px;
+        margin-left: 25px;
+    }
+
+    .navIcon {
+        margin-left: 25px;
+    }
+
+    .mission {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .navbar {
+        font-size: 1.5em;
+    }
+
+    .navLink {
+        padding-right: 20px;
+    }
+}
+
+

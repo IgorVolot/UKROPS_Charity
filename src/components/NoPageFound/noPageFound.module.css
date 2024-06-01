@@ -1,0 +1,43 @@
+/*/
+ *  *
+ *  *   ************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *   ************************************************************************
+ *  *
+/*/
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-family: "Abril Fatface", serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 1.2em;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 2em;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+

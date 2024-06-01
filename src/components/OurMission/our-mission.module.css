@@ -1,0 +1,76 @@
+/*/
+ *  *
+ *  *   ************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *   ************************************************************************
+ *  *
+/*/
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.text {
+    text-align: start;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    color: #2c3034;
+}
+
+.btn {
+    width: 160px;
+    display: block;
+    margin: 1em auto 2em auto;
+    background-color: #01016b;
+    color: burlywood;
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(2, 56, 27);
+    color: white;
+}
+
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        font-size: 1.3em;
+    }
+    #btn {
+        font-size: 1.3em;
+    }
+}
+
+
+@media screen and (min-width: 1681px) {
+    /*.container *:not(.btn) {*/
+    /*    max-width: 1600px;*/
+    /*    !*font-size: 1em;*!*/
+    /*}*/
+
+    .container {
+        max-width: 1800px;
+        font-size: 1.6em;
+    }
+    #btn {
+        font-size: 1.6em;
+    }
+}
+
+

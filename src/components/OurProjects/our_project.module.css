@@ -1,0 +1,232 @@
+/*/
+ *  *
+ *  *   ************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *   ************************************************************************
+ *  *
+/*/
+
+
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+.pageHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    padding: 20px;
+}
+
+.text {
+    flex-wrap: wrap;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: lightyellow;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto 100px auto;
+
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    background-color: rgba(218, 210, 196, 0.59);
+    top: 0;
+    bottom: 0;
+    left: 49.6%;
+    margin-left: -11px;
+    box-shadow: 0.5em 0.5em 0.5em rgba(80, 78, 73, 0.584);
+}
+
+
+/* Container around content */
+.container {
+    padding: 10px 30px;
+    position: relative;
+    width: 50%;
+    background-color: rgba(2, 19, 75, 0.98);
+    font-size: 1em;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgba(183, 171, 123, 0.93);
+    border: 3px ridge rgb(19, 35, 101);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+@media screen and (min-width: 761px) {
+    .container {
+        max-width: 782px;
+    }
+
+    .container::after {
+        right: -1px;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: 50%;
+    }
+
+    .text {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 1441px) {
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        width: 20px;
+        left: 49.4%;
+    }
+
+    .text {
+        font-size: 2em;
+    }
+
+    .timeline {
+        max-width: 1618px;
+    }
+
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: -20px;
+        /*background-color: rgba(183, 171, 123, 0.93);*/
+        border: 4px ridge rgb(19, 35, 101);
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+    box-shadow: 0.2em 0.5em 0.5em rgba(80, 78, 73, 0.584);
+    border-bottom-left-radius: 25px;
+    margin-bottom: 10px;
+
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0.5em 0.5em 0.5em rgba(80, 78, 73, 0.584);
+    margin-bottom: 10px;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 10px 12px;
+    position: relative;
+    border-radius: 6px;
+    max-height: 400px;
+    overflow: auto;
+    scroll-snap-align: center;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 769px) {
+    .right{
+    }
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 21px;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 6px;
+    }
+
+    /* Make all left containers looks like the right ones */
+    .left {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+        border-top-right-radius: 25px;
+    }
+}
+
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.h2 {
+    font-family: "Libre Baskerville", serif;
+    color: #ffffff;
+}
+
+
+.p {
+    margin: 2rem 2rem 2rem 2rem;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.text > a {
+    color: whitesmoke;
+}
