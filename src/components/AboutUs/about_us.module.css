@@ -6,35 +6,11 @@
  *  *
 /*/
 
-
 /* Three columns side by side */
 .column {
     float: left;
     width: 33.3%;
 }
-
-/*.img {*/
-/*    max-width: 50%;*/
-/*    margin: 1rem;*/
-/*}*/
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-}
-
-
-@media screen and (min-width: 1441px) {
-    .column {
-        margin: 0 auto;
-        width: 75%;
-    }
-
-}
-
 
 /* Add some shadows to create a card effect */
 .card {
@@ -84,15 +60,19 @@
     font-family: "WindSong", cursive;
     font-weight: 300;
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #333333;
+}
+
+#justasSignature {
+    font-size: 1em;
 }
 
 /* Donate button */
 .btn {
     width: 160px;
     display: block;
-    margin: 3rem auto;
+    margin: 7rem auto 7rem;
     background-color: #01016b;
     color: burlywood;
     border: solid;
@@ -108,6 +88,9 @@
     color: white;
 }
 
+.buttonRow {
+    margin: 2rem auto;
+}
 
 .button {
     background-color: #01016b;
@@ -119,17 +102,74 @@
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: rgb(173, 186, 227);
+    color: #000;
+    transition-duration: 0.6s;
+}
+
 
 .button > a {
-    color: lightgoldenrodyellow;
+    color: #fae49c;
     text-decoration: none;
 }
+
+.button > a:hover {
+    color: rgb(2, 56, 27);
+}
+
+.carousel {
+    transition-duration: 0.3s;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .buttonRow {
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .button {
+        margin-bottom: 0.5rem;
+    }
+
+    .btn {
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: calc(100vw - 15rem);
+        margin: auto;
+    }
+}
+
 
 @media screen and (min-width: 1681px) {
     .logo {
         max-width: 40%;
     }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: calc(100vw - 30rem);
+        margin: auto;
+    }
 }
+
+
 
 
 

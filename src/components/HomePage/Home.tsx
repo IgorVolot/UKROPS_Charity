@@ -8,7 +8,7 @@
 
 import "../../App.css"
 import style from "./home.module.css"
-import { imgGallery } from "../../utils/constants"
+import PicturesLightbox from "./PicturesLightbox"
 
 const Home = () => {
 
@@ -38,50 +38,9 @@ const Home = () => {
                title="A trip to Kyiv – Leo Krivski"> Kyiv. </a>
           </p>
         </div>
-
       </section>
 
-      <div className={`${style.row}`}>
-        <div className={style.column}>
-          <img src={`${imgGallery[0]}`} style={{ width: "100%" }}  alt={"0"} />
-          <img src={`${imgGallery[1]}`} style={{ width: "100%" }}  alt={"1"} />
-          <img src={`${imgGallery[2]}`} style={{ width: "100%" }} alt={"2"} />
-          <img src={`${imgGallery[3]}`} style={{ width: "100%" }}  alt={"3"} />
-          <img src={`${imgGallery[5]}`} style={{ width: "100%" }}  alt={"5"} />
-
-        </div>
-        <div className={style.column}>
-          <img src={`${imgGallery[8]}`} style={{ width: "100%" }}  alt={"8"} />
-          <img src={`${imgGallery[9]}`} style={{ width: "100%" }}  alt={"9"} />
-          <img src={`${imgGallery[10]}`} style={{ width: "100%" }}  alt={"10"} />
-          <img src={`${imgGallery[22]}`} style={{ width: "100%" }}  alt={"22"} />
-          <img src={`${imgGallery[6]}`} style={{ width: "100%" }}  alt={"6"} />
-          <img src={`${imgGallery[18]}`} style={{ width: "100%" }}  alt={"18"} />
-
-        </div>
-        <div className={style.column}>
-          <img src={`${imgGallery[13]} `} style={{ width: "100%" }}  alt={"13"} />
-          <img src={`${imgGallery[14]}`} style={{ width: "100%" }}  alt={"14"} />
-          <img src={`${imgGallery[15]}`} style={{ width: "100%" }}  alt={"15"} />
-          <img src={`${imgGallery[16]}`} style={{ width: "100%" }}  alt={"16"} />
-          <img src={`${imgGallery[17]}`} style={{ width: "100%" }}  alt={"17"} />
-          <img src={`${imgGallery[4]}`} style={{ width: "100%" }}  alt={"4"} />
-
-        </div>
-        <div className={style.column}>
-          <img src={`${imgGallery[20]}`} style={{ width: "100%" }}  alt={"20"} />
-          <img src={`${imgGallery[21]}`} style={{ width: "100%" }}  alt={"21"} />
-          <img src={`${imgGallery[23]}`} style={{ width: "100%" }}  alt={"23"} />
-          <img src={`${imgGallery[12]}`} style={{ width: "100%" }}  alt={"12"} />
-          <img src={`${imgGallery[19]}`} style={{ width: "100%" }}  alt={"19"} />
-          <a className="link"
-             href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview?fbclid=IwAR1ttY_hAVWcnGXaZHIRr0zbdSb9dtBAGMh6j28lik7RayjiC68g_eMgA9k"
-             target="_blank">
-            <img src={`${imgGallery[11]}`} style={{ width: "100%" }} alt={"11"} />
-          </a>
-
-        </div>
-      </div>
+      <PicturesLightbox/>
 
       <article>
         <div className={`${style.container3} mt-5 mb-3`}>
@@ -136,8 +95,6 @@ const Home = () => {
         <button className={`${style.btn} btn-lg  mt-5 justify-content-center`} id={"donate_btn"}>Donate</button>
       </div>
     </main>
-
-
   )
 }
 

@@ -9,7 +9,10 @@
  */
 
 import style from "./banner.module.css";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import leoRow from "../../assets/bottomBanner/ocean_row.jpg";
+import leoBlog from "../../assets/bottomBanner/leo_blog.jpg";
+import crowdfunding from "../../assets/bottomBanner/crowdfunding.jpg";
 
 
 const BottomBanner = () => {
@@ -19,13 +22,13 @@ const BottomBanner = () => {
         <p className={`${style.title} text-center mt-2 mb-1`}>Kindred resources</p>
         <div className=" justify-content-around mb-2">
           <Link to={"https://www.leosrow.com/"} target="_blank" rel="noopener noreferrer">
-            <img src="../src/assets/bottomPreFooter/ocean_row.jpg" className={`${style.img}  col-md-4 px-5`} />
+            <img src={leoRow} className={`${style.img}  col-md-4 px-5`} />
           </Link>
           <Link to={"https://ukrivski.com/category/my-trips-to-ukraine/"} target="_blank" rel="noopener noreferrer">
-            <img src="../src/assets/bottomPreFooter/leo_blog.jpg" className={`${style.img}  col-md-4 px-5`} />
+            <img src={leoBlog} className={`${style.img}  col-md-4 px-5`} />
           </Link>
           <Link to={"https://www.justgiving.com/crowdfunding/leonid-krivskiy"} target="_blank" rel="noopener noreferrer">
-            <img src="../src/assets/bottomPreFooter/crowfunding.jpg" className={`${style.img}  col-md-4 px-5`} />
+            <img src={crowdfunding} className={`${style.img}  col-md-4 px-5`} />
           </Link>
         </div>
       </div>

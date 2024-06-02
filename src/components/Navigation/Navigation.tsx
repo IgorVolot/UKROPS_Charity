@@ -41,9 +41,9 @@ function Navigation() {
     <>
       {["lg"].map((expand) => (
         <Navbar sticky="top" key={expand} expand={expand}
-                className={`${style.navbar} pb-3 ${!visible && style.navbarHidden}`}>
-          <Container fluid>
-            <Navbar.Brand href="/home"><img src={logo_small} style={logoStyle} alt="small_logo" /></Navbar.Brand>
+                className={`${style.navbar} pb-1 ${!visible && style.navbarHidden}`}>
+          <Container fluid className={`${style.mainContainer}`}>
+            <Navbar.Brand className={`${style.navbarBrand}`} href="/home"><img src={logo_small} style={logoStyle} alt="small_logo" /></Navbar.Brand>
             <Navbar.Toggle className={`${style.navbarToggler}`} aria-controls={`navbarResponsive-${expand}`} />
             <Navbar.Collapse id={`navbarResponsive-${expand}`}>
               <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -83,24 +83,27 @@ function Navigation() {
                 <NavLink className={`${style.navLink} pe-4 pb-4`} to="/contacts">
                   Contacts
                 </NavLink>
-                <Nav.Link
-                  href="https://www.linkedin.com/in/leo-krivski-3b1a47239/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_apph"
-                  target="_blank">
-                  <FontAwesomeIcon className={`${style.navIcon}`} icon={faLinkedin} style={{ color: "#FFD43B" }} />
-                </Nav.Link>
-                <Nav.Link href="https://www.facebook.com/profile.php?id=100009578859571" target="_blank">
-                  <FontAwesomeIcon className={`${style.navIcon} `} icon={faFacebook} style={{ color: "#FFD43B" }} />
-                </Nav.Link>
-                <Nav.Link href="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr" target="_blank">
-                  <FontAwesomeIcon className={`${style.navIcon} `} icon={faSquareInstagram}
-                                   style={{ color: "#FFD43B" }} />
-                </Nav.Link>
-                <Nav.Link href="">
-                  <FontAwesomeIcon className={`${style.navIcon} `} icon={faYoutube} style={{ color: "#FFD43B" }} />
-                </Nav.Link>
-                <Nav.Link href="mailto:leo@ukropsmedical.org">
-                  <FontAwesomeIcon className={`${style.navIcon}`} icon={faEnvelope} style={{ color: "#FFD43B" }} />
-                </Nav.Link>
+                <div className="d-flex align-items-center">
+                  <Nav.Link
+                    href="https://www.linkedin.com/in/leo-krivski-3b1a47239/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_apph"
+                    target="_blank">
+                    <FontAwesomeIcon className={`${style.navIcon}`} icon={faLinkedin} style={{ color: "#FFD43B" }} />
+                  </Nav.Link>
+                  <Nav.Link href="https://www.facebook.com/profile.php?id=100009578859571" target="_blank">
+                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faFacebook} style={{ color: "#FFD43B" }} />
+                  </Nav.Link>
+                  <Nav.Link href="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr" target="_blank">
+                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faSquareInstagram}
+                                     style={{ color: "#FFD43B" }} />
+                  </Nav.Link>
+                  <Nav.Link href="">
+                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faYoutube} style={{ color: "#FFD43B" }} />
+                  </Nav.Link>
+                  <Nav.Link href="mailto:leo@ukropsmedical.org">
+                    <FontAwesomeIcon className={`${style.navIcon}`} icon={faEnvelope} style={{ color: "#FFD43B" }} />
+                  </Nav.Link>
+                </div>
+
               </Nav>
             </Navbar.Collapse>
           </Container>
