@@ -20,7 +20,7 @@ const JustasMazunaitis = () => {
       <section>
         <div className={about_us.card}>
           <img className={`${about_us.img} img-thumbnail mx-auto`} src={justas}
-               alt="Justas_Mazunaitis" />
+               alt="Dr_Justas_Mazunaitis" />
           <div className="card-body">
             <h3 className="card-text text-center">Dr. Justas Mazunaitis</h3>
           </div>

@@ -15,6 +15,7 @@
     text-align: center;
     text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);
 }
+
 .icon {
     display: block;
     margin-left: auto;
@@ -36,7 +37,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-
 }
 
 .btn {

@@ -16,7 +16,6 @@ const PrivacyPolicy = () => {
 
   return (
     <React.Fragment>
-
       <div className={`${style.block}`}>
         <h1 className={"m-md-5"}>Privacy Policy</h1>
 

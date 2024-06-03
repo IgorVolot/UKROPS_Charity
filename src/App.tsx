@@ -21,6 +21,8 @@ import LeoKrivskiy from "./components/AboutUs/LeoKriskiy/LeoKriskiy"
 import AnnaHunter from "./components/AboutUs/AnnaHunter/AnnaHunter"
 import JustasMazunaitis from "./components/AboutUs/JustasMazunaitis/JustasMazunaitis"
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy"
+import TermOfUse from "./components/TermOfUse/TermOfUse"
+import CookiePolicy from "./components/CookiePolicy/CookiePolicy"
 
 
 const App = () => {
@@ -37,6 +39,8 @@ const App = () => {
           <Route path="/our_projects" element={<OurProject />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/cookie_policy" element={<CookiePolicy />} />
+          <Route path="/terms_of_use" element={<TermOfUse />} />
           <Route path="/*" element={<NoPageFound />} />
         </Route>
       </Routes>

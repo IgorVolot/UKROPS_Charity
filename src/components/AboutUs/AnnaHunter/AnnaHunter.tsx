@@ -6,7 +6,6 @@
  *  *
 /*/
 
-import React from "react"
 import main_logo from "../../../assets/logo/img_ukrops.jpg"
 import anna from "../../../assets/founderImage/img_anna.jpeg"
 import about_us from "../about_us.module.css"
@@ -19,7 +18,7 @@ const AnnaHunter = () => {
     <>
       <section>
         <div className={about_us.card}>
-            <img className={`${about_us.img} img-thumbnail mx-auto`} src={anna} alt="Anna_Hunter" />
+            <img className={`${about_us.img} img-thumbnail mx-auto`} src={anna} alt="Dr_Anna_Hunter" />
 
           <div className="card-body card-body justify-content-center align-items-center">
             <h3 className="card-text text-center">Dr. Anna Hunter</h3>

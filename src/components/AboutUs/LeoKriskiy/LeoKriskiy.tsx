@@ -27,7 +27,7 @@ const LeoKrivskiy = () => {
                   <img
                     // className="d-block w-100"
                     src= {image}
-                    alt={`Slide ${idx}`}
+                    alt={`Dr_Leo ${idx}`}
                   />
                 </Carousel.Item>
               ))}
