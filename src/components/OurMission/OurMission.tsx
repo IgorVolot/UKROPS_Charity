@@ -6,7 +6,6 @@
  *  *
 /*/
 
-import React from "react"
 import big_logo from "../../assets/logo/img_ukrops.jpg"
 import style from "./our-mission.module.css"
 
@@ -14,7 +13,7 @@ import style from "./our-mission.module.css"
 const OurMission = () => {
   return (
     <>
-      <img className={`${style.img} img-thumbnail`} src={big_logo} />
+      <img className={`${style.img} img-thumbnail`} src={big_logo} alt="big_logo"/>
 
       <div className={`${style.container} my-5 border border-secondary shadow ju`} data-bs-spy="scroll"
            data-bs-target=".navbar" data-bs-offset="10">

@@ -25,7 +25,7 @@ const CookiePolicy = () => {
         </div>
 
         <div className={`${style.text}`}>
-          We value your privacy very highly. Please read this Cookie Policy carefully before using the www.leosrow.com
+          We value your privacy very highly. Please read this Cookie Policy carefully before using the www.ukropsmedical.org
           Website (the "Website") operated by Leo Krivskiy ("us," "we," "our") as this Cookie Policy contains important
           information regarding our use of cookies and other tracking technologies, your privacy and how we may use the
           information that we collect about you. Please also read our Privacy Policy, which provides more information
@@ -212,7 +212,6 @@ const CookiePolicy = () => {
         <div className={`${style.text}`}>
           If you have any questions about this Cookie Policy, please contact us at leo@ukropsmedical.com.
         </div>
-
       </div>
     </React.Fragment>
   )

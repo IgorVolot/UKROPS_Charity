@@ -5,7 +5,7 @@
  *  *   ************************************************************************
  *  *
 /*/
-import React from "react"
+
 import main_logo from "../../assets/logo/img_ukrops.jpg"
 import style from "./contacts.module.css"
 import { Link } from "react-router-dom"

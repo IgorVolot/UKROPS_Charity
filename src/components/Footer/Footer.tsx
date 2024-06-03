@@ -15,19 +15,20 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import img_ukrops from "../../assets/logo/img_ukrops.jpg"
 import Modal from "react-bootstrap/Modal"
 import Button from "react-bootstrap/Button"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
-  const [showPrivacy, setShowPrivacy] = useState(false);
-  const closePrivacy = () => setShowPrivacy(false);
-  const showPrivacyModal = () => setShowPrivacy(true);
+  const [showPrivacy, setShowPrivacy] = useState(false)
+  const closePrivacy = () => setShowPrivacy(false)
+  const showPrivacyModal = () => setShowPrivacy(true)
 
-  const [showCookie, setShowCookie] = useState(false);
-  const closeCookie = () => setShowCookie(false);
-  const showCookieModal = () => setShowCookie(true);
+  const [showCookie, setShowCookie] = useState(false)
+  const closeCookie = () => setShowCookie(false)
+  const showCookieModal = () => setShowCookie(true)
 
-  const [showTerms, setShowTerms] = useState(false);
-  const closeTerms = () => setShowTerms(false);
-  const showTermsModal = () => setShowTerms(true);
+  const [showTerms, setShowTerms] = useState(false)
+  const closeTerms = () => setShowTerms(false)
+  const showTermsModal = () => setShowTerms(true)
 
   return (
     <footer className={`${style.footer}`}>
@@ -180,8 +181,6 @@ export default function Footer() {
                   </Modal.Footer>
                 </Modal>
               </li>
-
-
             </ul>
           </div>
           <div className="col-md-3 text-end">
@@ -215,8 +214,15 @@ export default function Footer() {
               </li>
             </ul>
             <p className="mb-0">© {new Date().getFullYear()} UKROPS. All rights reserved.</p>
-            <p className="mb-0"> UKROPS Medical Charity Registered Charity in England and Wales (charity no.
-              1205865).</p>
+            <Link className={style.link} to="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview?fbclid=IwAR1ttY_hAVWcnGXaZHIRr0zbdSb9dtBAGMh6j28lik7RayjiC68g_eMgA9k" target="_blank">
+              <p className="mb-0"> UKROPS Medical Charity Registered Charity in England and Wales (charity no.
+                1205865).</p>
+            </Link>
+            <Link className={style.link} to="mailto:cz.it.design.studio@gmail.com">
+              <p>Designed & built by Igor Volotovskyi</p>
+              <p>© {new Date().getFullYear()} CZ IT-Design Studio</p>
+            </Link>
+
           </div>
         </div>
       </div>

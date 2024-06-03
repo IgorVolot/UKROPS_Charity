@@ -6,11 +6,6 @@
  *  *
 /*/
 
-
-/** {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
 .pageHeader {
     display: flex;
     justify-content: center;
@@ -51,7 +46,6 @@
     margin-left: -11px;
     box-shadow: 0.5em 0.5em 0.5em rgba(80, 78, 73, 0.584);
 }
-
 
 /* Container around content */
 .container {

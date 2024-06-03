@@ -67,7 +67,7 @@ const LeoKrivskiy = () => {
             has also continued with his educational projects including setting up a joint online
             platform
             with his Intensive Care colleagues from the World-famous Mayo Clinic in the U.S. called <a
-            className={styles.link} href="https://www.icertain.org/ukraine" target="_blank" title="CERTAIN
+            className={styles.link} href="https://www.icertain.org/ukraine" rel="noopener noreferrer" target="_blank" title="CERTAIN
                             Ukraine"> CERTAIN Ukraine — CERTAIN </a> which is aimed at providing Ukrainian anaesthetists
             with the latest scientific evidence, as well as answering practical clinical questions. Dr
             Krivskiy also provides practical advice to his colleagues throughout Ukraine including those
@@ -76,7 +76,7 @@ const LeoKrivskiy = () => {
             He also visited a Kyiv hospital in March, 2023 where he worked and shared his experience
             with
             his anaesthetic colleagues and friends. Dr. Krivskiy has been writing about his experiences
-            in Ukraine on his blog <a className={styles.link} href="https://ukrivski.com/" target="_blank"
+            in Ukraine on his blog <a className={styles.link} href="https://ukrivski.com/" rel="noopener noreferrer" target="_blank"
                                       title="Leo Krivski – Real People. Real Stories. Real Solutions">
             Leo Krivski – Real People. Real Stories. Real Solutions. </a> He has also been recording
             stories of Ukrainian doctors there to let the World see the war through the eyes of ordinary
@@ -95,15 +95,36 @@ const LeoKrivskiy = () => {
         <Row className={styles.buttonRow}>
           <button className={`${styles.button} mx-2`} id={styles.back_btn}
                   style={{ width: '16em', height: '3em' }}
-                  onClick={() => navigate("/anna")}>Anna Hunter
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/anna");}}
+          >Anna Hunter
           </button>
           <button className={`${styles.button} mx-2`} id={styles.back_btn}
                   style={{ width: '16em', height: '3em' }}
-                  onClick={() => navigate("/justas")}>Justas Mazunaitis
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/justas");
+                  }}>Justas Mazunaitis
           </button>
           <button className={`${styles.button} mx-2`} id={styles.back_btn}
                   style={{ width: '16em', height: '3em' }}
-                  onClick={() => navigate("/about_us")}>About Us
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/about_us");}}
+          >About Us
           </button>
         </Row>
 

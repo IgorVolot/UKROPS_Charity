@@ -6,7 +6,6 @@
  *  *
 /*/
 
-import React from "react"
 import style from "./our_project.module.css"
 import media from "../../assets/video/media_file.mp4"
 import img1 from "../../assets/pictures/img-aid_0.jpeg"
@@ -32,7 +31,7 @@ const OurProjects = () => {
 
               <text className={`${style.text} px-lg-5`}>
                 In January 2025, Leo will embark on the extraordinary challenge of <a
-                href="https://www.leosrow.com/the-challenge" target="_blank">
+                href="https://www.leosrow.com/the-challenge" rel="noopener noreferrer" target="_blank" >
                 rowing solo</a> across the Atlantic.
                 Starting
                 from Tenerife and finishing in Barbados, this voyage is a true test of both physical strength and mental
@@ -171,65 +170,6 @@ const OurProjects = () => {
           </div>
         </div>
       </div>
-
-
-      {/*<div className="vstack gap-3">*/}
-      {/*  <div className="p-2">*/}
-      {/*    <video className="sticky-top float-start p-1 mx-sm-1 mx-lg-5" width="240" height="180" autoPlay muted*/}
-      {/*           controls={true}>*/}
-      {/*      /!*<source src="../../assets/video/IMG_0966.MP4" type="video/mp4" />*!/*/}
-      {/*      /!*<source src="../../assets/video/IMG_0966.MP4" type="video/ogg" />*!/*/}
-      {/*      <iframe className="responsive-iframe" src="../../assets/video/IMG_0966.MP4"></iframe>*/}
-      {/*    </video>*/}
-      {/*    <span className="animate-text px-lg-5">*/}
-      {/*      In January 2025, Leo will embark on the extraordinary challenge of rowing solo across the Atlantic. Starting*/}
-      {/*      from Tenerife and finishing in Barbados, this voyage is a true test of both physical strength and mental*/}
-      {/*      resilience. Leo will navigate through the vast, open waters, battling against unpredictable weather and*/}
-      {/*      towering waves, all while facing the daunting solitude of the ocean.<br />*/}
-
-      {/*      The immense task of maintaining physical endurance and mental focus amidst the breath-taking yet relentless*/}
-      {/*      expanse of the Atlantic will push Leo to his limits.<br />*/}
-
-      {/*      Reaching Barbados won't just signify the end of a geographical voyage; it will mark the completion of an*/}
-      {/*      incredible personal achievement, showcasing human determination and spirit at its finest. This remarkable*/}
-      {/*      journey also serves as a platform for Leo's commitment to fundraise and support Ukrainian medical*/}
-      {/*      professionals, providing them with essential medical equipment and supplies, further underlining the*/}
-      {/*      profound impact of this Atlantic row.<br />*/}
-      {/*    </span>*/}
-      {/*  </div>*/}
-
-
-      {/*  <div className="p-2">*/}
-      {/*    Second item*/}
-      {/*  </div>*/}
-
-
-      {/*  <div className="p-2">*/}
-      {/*    Third item*/}
-      {/*  </div>*/}
-
-      {/*  <div className="p-2">*/}
-      {/*    <video className="sticky-top float-start p-1 mx-lg-5" width="240" height="180" autoPlay muted controls={true}>*/}
-      {/*      <source src="https://www.facebook.com/100009578859571/videos/907938907730536/" type="video/mp4" />*/}
-      {/*    </video>*/}
-      {/*    <span className="animate-text">*/}
-      {/*      In January 2025, Leo will embark on the extraordinary challenge of rowing solo across the Atlantic. Starting*/}
-      {/*      from Tenerife and finishing in Barbados, this voyage is a true test of both physical strength and mental*/}
-      {/*      resilience. Leo will navigate through the vast, open waters, battling against unpredictable weather and*/}
-      {/*      towering waves, all while facing the daunting solitude of the ocean.<br />*/}
-
-      {/*      The immense task of maintaining physical endurance and mental focus amidst the breath-taking yet relentless*/}
-      {/*      expanse of the Atlantic will push Leo to his limits.<br />*/}
-
-      {/*      Reaching Barbados won't just signify the end of a geographical voyage; it will mark the completion of an*/}
-      {/*      incredible personal achievement, showcasing human determination and spirit at its finest. This remarkable*/}
-      {/*      journey also serves as a platform for Leo's commitment to fundraise and support Ukrainian medical*/}
-      {/*      professionals, providing them with essential medical equipment and supplies, further underlining the*/}
-      {/*      profound impact of this Atlantic row.<br />*/}
-      {/*    </span>*/}
-      {/*  </div>*/}
-
-      {/*</div>*/}
     </>
   )
 }

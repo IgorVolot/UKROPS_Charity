@@ -53,15 +53,39 @@ const AnnaHunter = () => {
         <Row>
           <button className={`${about_us.button} col mx-2`} id={about_us.back_btn}
                   style={{ width: '16em', height: '3em' }}
-                  onClick={() => navigate("/leo")}>Leo Krivskiy
-          </button>
-          <button className={`${about_us.button} col mx-2`} id={about_us.back_btn}
-                  style={{ width: '6em', height: '3em' }}
-                  onClick={() => navigate("/about_us")}>About Us
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/leo");
+                  }}
+          >Leo Krivskiy
           </button>
           <button className={`${about_us.button} col mx-2`} id={about_us.back_btn}
                   style={{ width: '16em', height: '3em' }}
-                  onClick={() => navigate("/justas")}>Justas Mazunaitis
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/justas");
+                  }}
+          >Justas Mazunaitis
+          </button>
+          <button className={`${about_us.button} col mx-2`} id={about_us.back_btn}
+                  style={{ width: '6em', height: '3em' }}
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/about_us");
+                  }}
+          >About Us
           </button>
         </Row>
       </section>

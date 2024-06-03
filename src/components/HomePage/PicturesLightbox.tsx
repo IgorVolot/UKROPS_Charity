@@ -22,7 +22,7 @@ const PicturesLightbox = () => {
     setToggler(prev => !prev);  // Switch state to reopen FsLightbox
   };
 
-  // Defining groups of images by columns
+  // Defining groups of images by columns !Order is IMPORTANT!
   const columns = [
     [0, 1, 2, 3, 5],
     [8, 9, 10, 22, 6, 18],
@@ -52,7 +52,7 @@ const PicturesLightbox = () => {
         <FsLightbox
           toggler={toggler}
           sources={imgGallery}
-          slide={currentImageIndex + 1}  // Specify index of the current image
+          slide={currentImageIndex + 1}
         />
       </div>
 

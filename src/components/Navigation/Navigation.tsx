@@ -21,14 +21,13 @@ import { useEffect, useState } from "react"
 import NavDropdown from "react-bootstrap/NavDropdown"
 
 function Navigation() {
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset)
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY)
   const [visible, setVisible] = useState(true)
   const [showDropdown, setShowDropdown] = useState(false)
-  const location = useLocation()
-
+  useLocation()
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset
+      const currentScrollPos = window.scrollY
       setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0) || currentScrollPos < 20)
       setPrevScrollPos(currentScrollPos)
     }
@@ -58,7 +57,7 @@ function Navigation() {
                   onMouseEnter={() => setShowDropdown(true)}
                   onMouseLeave={() => setShowDropdown(false)}
                 >
-                  <a
+                  <span
                     className={`nav-link dropdown-toggle ${style.navLink}`}
                     id="aboutUsDropdown"
                     role="button"
@@ -66,7 +65,6 @@ function Navigation() {
                     aria-haspopup="true"
                     aria-expanded={false}
                   />
-                  {/*</a>*/}
                   <div className={`dropdown-menu ${showDropdown ? "show" : ""} ${style.menu}`}
                        aria-labelledby="aboutUsDropdown">
                     <NavDropdown.Item className="dropdown-item" href="/leo">Dr. Leo</NavDropdown.Item>

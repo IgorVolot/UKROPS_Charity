@@ -22,7 +22,7 @@ const TermOfUse = () => {
           Last updated: 19 May 2024 16:30
         </div>
         <div className={`${style.text}`}>
-          Please read this Terms of Service ("Terms," "Terms of Service") carefully before using the www.leosrow.com
+          Please read this Terms of Service ("Terms," "Terms of Service") carefully before using the www.ukropsmedical.org
           website (the "Website") operated by Leo Krivskiy ("us," "we," "our") as this Terms of Service contains
           important information regarding limitations of our liability. Our address is Garden Cottage, Chapel Lane
           Nomansland, Salisbury, UK SP5 2DA. Your access to and use of this Website is conditional upon your acceptance

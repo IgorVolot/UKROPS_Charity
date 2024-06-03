@@ -6,7 +6,6 @@
  *  *
 /*/
 
-import React from "react"
 import main_logo from "../../../assets/logo/img_ukrops.jpg"
 import justas from "../../../assets/founderImage/img_justas.jpeg"
 import {useNavigate} from "react-router-dom"
@@ -52,15 +51,36 @@ const JustasMazunaitis = () => {
         <Row>
           <button className={`${about_us.button} col mx-2`} id={about_us.back_btn}
                   style={{ width: '16em', height: '3em' }}
-                  onClick={() => navigate("/leo")}>Leo Krivskiy
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/leo");}}
+          >Leo Krivskiy
           </button>
           <button className={`${about_us.button} col mx-2`} id={about_us.back_btn}
                   style={{ width: '16em', height: '3em' }}
-                  onClick={() => navigate("/anna")}>Anna Hunter
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/anna");}}
+          >Anna Hunter
           </button>
           <button className={`${about_us.button} col mx-2`} id={about_us.back_btn}
                   style={{ width: '6em', height: '3em' }}
-                  onClick={() => navigate("/about_us")}>About Us
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: 'smooth'
+                    });
+                    navigate("/about_us");}}
+          >About Us
           </button>
         </Row>
       </section>

@@ -8,8 +8,9 @@
 
 import "./noPageFound.module.css"
 import error404 from "../../assets/logo/error_404_img.png"
+import type React from "react"
 
-export default function NoPageFound(): JSX.Element {
+export default function NoPageFound(): React.JSX.Element {
   return (
     <>
       <section className="text-center">
