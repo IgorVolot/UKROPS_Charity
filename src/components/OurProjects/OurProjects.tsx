@@ -11,6 +11,7 @@ import media from "../../assets/video/media_file.mp4"
 import img1 from "../../assets/pictures/img-aid_0.jpeg"
 
 const OurProjects = () => {
+
   return (
     <>
       <div className={style.pageHeader}>

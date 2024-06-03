@@ -6,18 +6,36 @@
  *  *
 /*/
 
+@font-face {
+    font-family: 'Chettalbury Italic';
+    src: url('../../assets/fonts/ChettalburyItalic-lxxwq.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'KattyDiona Italic';
+    src: url('../../assets/fonts/KattyDiona.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Arathevil Italic';
+    src: url('../../assets/fonts/ArathevilBontegliar-KVVjX.otf') format('truetype');
+}
+
+
 /* Three columns side by side */
 .column {
-    float: left;
+    /*float: left;*/
     width: 33.3%;
 }
 
-/* Add some shadows to create a card effect */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    min-height: 720px;
+    height: 45rem;
 }
 
+.img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
 .clearfix::after {
     content: "";
@@ -37,9 +55,19 @@
     color: #2c3034;
 }
 
-.text {
+.article, .text {
     text-align: start;
     font-family: "Cormorant Garamond", serif;
+    color: #222428;
+}
+
+.text {
+    min-height: 12rem;
+}
+
+.link {
+    text-decoration: underline;
+    text-decoration-color: #042f60;
     color: #2c3034;
 }
 
@@ -51,16 +79,27 @@
 }
 
 .title {
-    font-family: "Academy Engraved LET";
+    font-family: "Academy Engraved LET", serif;
 }
 
-.signature {
-    font-family: "WindSong", cursive;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1.2em;
-    color: #333333;
+#leo_signature {
+    font-family: 'Chettalbury Italic', serif;
+    font-size: 2em;
+    color: black;
 }
+
+#anna_signature {
+    font-family: "KattyDiona Italic", serif;
+    font-size: 2em;
+    color: #2b2f32;
+}
+
+#justas_signature {
+    font-family: "Arathevil Italic", serif;
+    font-size: 2em;
+    color: #053b75;
+}
+
 
 #justasSignature {
     font-size: 1em;
@@ -98,6 +137,11 @@
     padding: 10px 20px;
     border-radius: 20px 5px 20px 5px;
     cursor: pointer;
+    width: 16rem;
+    height: 3.5rem;
+    /*margin-top: 4rem;*/
+    /*margin-bottom: 4rem;*/
+    font-size: 1em;
 }
 
 .button:hover {
@@ -107,52 +151,35 @@
 }
 
 
-.button > a {
-    color: #fae49c;
-    text-decoration: none;
-}
+/*.button > a {*/
+/*    color: #fae49c;*/
+/*    text-decoration: none;*/
+/*}*/
 
-.button > a:hover {
-    color: rgb(2, 56, 27);
-}
+/*.button > a:hover {*/
+/*    color: rgb(2, 56, 27);*/
+/*}*/
 
 .carousel {
     transition-duration: 0.3s;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 2561px) {
     .column {
-        width: 100%;
-        display: block;
+        /*width: 33.3%;*/
+        /*display: block;*/
+    }
+    .text {
+        min-height: 10rem;
     }
 
     .card {
-        margin-bottom: 2rem;
-    }
-
-    .buttonRow {
-        flex-direction: column;
-        margin: 1rem;
-    }
-    .button {
-        margin-bottom: 0.5rem;
-    }
-
-    .btn {
-        margin: 2rem auto;
+        height: 164rem;
+        /*alignment-baseline: auto;*/
     }
 }
-
-@media screen and (min-width: 769px){
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: calc(100vw - 15rem);
-        margin: auto;
-    }
-}
-
 
 @media screen and (min-width: 1681px) {
     .logo {
@@ -162,11 +189,87 @@
     .row {
         display: flex;
         flex-wrap: wrap;
-        max-width: calc(100vw - 30rem);
+        max-width: calc(100vw - 40rem);
+        margin: auto;
+    }
+
+    .text {
+        min-height: 10rem;
+    }
+
+    .card {
+        height: 46rem;
+        alignment-baseline: auto;
+    }
+
+    .button {
+        width: 12rem;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .column {
+        /*width: 80%;*/
+    }
+
+    .text {
+        min-height: 22rem;
+    }
+
+    .card {
+        height: 47rem;
+        alignment-baseline: auto;
+    }
+
+    .button {
+        width: 12rem;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: calc(100vw - 15rem);
         margin: auto;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .text {
+        min-height: 8rem;
+    }
+
+    .buttonRow {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 12rem;
+        margin: 1rem auto;
+    }
+
+    .btn {
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        height: 38rem;
+    }
+
+    .text {
+        min-height: 8rem;
+    }
+}
 
 
 

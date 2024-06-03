@@ -22,13 +22,13 @@ const BottomBanner = () => {
         <p className={`${style.title} text-center mt-2 mb-1`}>Kindred resources</p>
         <div className=" justify-content-around mb-2">
           <Link to={"https://www.leosrow.com/"} target="_blank" rel="noopener noreferrer">
-            <img src={leoRow} className={`${style.img}  col-md-4 px-5`} alt="leos_row"/>
+            <img src={leoRow} className={`${style.img}  `} alt="leos_row"/>
           </Link>
           <Link to={"https://ukrivski.com/category/my-trips-to-ukraine/"} target="_blank" rel="noopener noreferrer">
-            <img src={leoBlog} className={`${style.img}  col-md-4 px-5`} alt="leo_blog"/>
+            <img src={leoBlog} className={`${style.img} `} alt="leo_blog"/>
           </Link>
           <Link to={"https://www.justgiving.com/crowdfunding/leonid-krivskiy"} target="_blank" rel="noopener noreferrer">
-            <img src={crowdfunding} className={`${style.img}  col-md-4 px-5`} alt="crowdfunding"/>
+            <img src={crowdfunding} className={`${style.img}  `} alt="crowdfunding"/>
           </Link>
         </div>
       </div>

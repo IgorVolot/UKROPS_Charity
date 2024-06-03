@@ -8,20 +8,19 @@
 
 import main_logo from "../../assets/logo/img_ukrops.jpg"
 import style from "./contacts.module.css"
-import { Link } from "react-router-dom"
 import letterIcon from "../../assets/logo/letter-icon.svg"
 
 const Contacts = () => {
   return (
     <>
-      <section className="container">
-        <div>
-          <Link to="mailto:leo@ukropsmedical.org">
+      <div className={`${style.container}`}>
+        <div className="d-flex" style={{justifyContent: 'center'}}>
+          <a href="mailto:leo@ukropsmedical.org">
               <img className={style.mailIcon} src={letterIcon} alt="mail_icon" />
-          </Link>
+          </a>
         </div>
         <div className={style.email}>
-          <Link to="mailto:leo@ukropsmedical.org">UKROPS Medical Charity</Link>
+          <a href="mailto:leo@ukropsmedical.org">UKROPS Medical Charity</a>
         </div>
         <div>
           <img className={style.img} src={main_logo} alt="main_logo" />
@@ -30,7 +29,7 @@ const Contacts = () => {
         <div>
           <button className={style.btn}>Donate</button>
         </div>
-      </section>
+      </div>
     </>
   )
 }

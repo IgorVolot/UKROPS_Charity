@@ -6,6 +6,7 @@
  *  *
 /*/
 
+
 .email {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
@@ -18,8 +19,7 @@
 
 .icon {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .email > a {
@@ -30,13 +30,15 @@
 .mailIcon {
     width: 80px;
     height: 80px;
+    position: relative;
+    margin: auto;
 }
 
 .img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
 }
 
 .btn {

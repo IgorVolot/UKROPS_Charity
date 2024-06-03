@@ -34,7 +34,7 @@ export default function Footer() {
     <footer className={`${style.footer}`}>
       <div className="container">
         <div className="row align-items-center py-3">
-          <div className="col-md-3">
+          <div className={`${style.imgContainer} col-md-3`}>
             <a href={"/home"} rel="noopener noreferrer">
               <img src={`${img_ukrops}`} alt="Logo" className={`${style.footerLogo} w-75 `} />
             </a>
@@ -183,7 +183,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-3 text-end">
+          <div className={`${style.imgContainer} col-md-3`}>
             <a className="link"
                href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview?fbclid=IwAR1ttY_hAVWcnGXaZHIRr0zbdSb9dtBAGMh6j28lik7RayjiC68g_eMgA9k"
                target="_blank">

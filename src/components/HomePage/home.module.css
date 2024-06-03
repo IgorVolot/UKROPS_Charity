@@ -105,6 +105,9 @@ main {
 }
 
 @media screen and (max-width: 1020px) {
+    .main {
+        padding-bottom: 1rem;
+    }
     .text1 {
         font-size: 0.9em;
     }
@@ -190,7 +193,6 @@ main {
     padding: 10px 20px;
     border-radius: 7px;
     cursor: pointer;
-    /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);*/
     box-shadow: 2px 2px 5px rgba(102, 150, 117, 0.93);
     transition: all 0.3s ease;
 }
@@ -202,7 +204,7 @@ main {
 
 @media screen and (max-width: 1020px) {
     .btn {
-        margin: 8px 0;
+        /*margin: 8px 0;*/
         width: 90px;
         font-size: 14px;
     }

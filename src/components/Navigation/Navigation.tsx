@@ -57,7 +57,7 @@ function Navigation() {
                   onMouseEnter={() => setShowDropdown(true)}
                   onMouseLeave={() => setShowDropdown(false)}
                 >
-                  <span
+                  <a
                     className={`nav-link dropdown-toggle ${style.navLink}`}
                     id="aboutUsDropdown"
                     role="button"
