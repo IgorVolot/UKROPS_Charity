@@ -17,7 +17,6 @@ const TermOfUse = () => {
     <React.Fragment>
       <div className={`${style.block}`}>
         <h1 className={"m-md-5"}>Terms of use</h1>
-
         <div className={`${style.text}`}>
           Last updated: 19 May 2024 16:30
         </div>
