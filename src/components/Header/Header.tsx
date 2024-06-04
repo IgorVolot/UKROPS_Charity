@@ -21,10 +21,10 @@ const Header = () => {
           <h2 className={`${style.animateText} text-center`}>
             <q>{quote}</q>
           </h2>
-          {/*<div className="alert alert-warning text-center">*/}
-          {/*  <strong>Warning!</strong> 🚧 This site is still under development.  Some services do not work.  We*/}
-          {/*  apologize for the inconvenience. 🚧*/}
-          {/*</div>*/}
+          <div className="alert alert-warning text-center">
+            <strong>Warning!</strong> 🚧 This site is still under development.  Some services do not work.  We
+            apologize for the inconvenience. 🚧
+          </div>
         </div>
       </header>
     </>

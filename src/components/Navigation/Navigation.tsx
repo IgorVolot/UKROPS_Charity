@@ -59,17 +59,20 @@ function Navigation() {
                 >
                   <a
                     className={`nav-link dropdown-toggle ${style.navLink}`}
+                    style={{color: "rgb(238, 209, 176)"}}
+                    href="#"
                     id="aboutUsDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded={false}
-                  />
+                  >
+                </a>
                   <div className={`dropdown-menu ${showDropdown ? "show" : ""} ${style.menu}`}
                        aria-labelledby="aboutUsDropdown">
-                    <NavDropdown.Item className="dropdown-item" href="/leo">Dr. Leo</NavDropdown.Item>
-                    <NavDropdown.Item className="dropdown-item" href="/anna">Dr. Anna</NavDropdown.Item>
-                    <NavDropdown.Item className="dropdown-item" href="/justas">Dr. Justas</NavDropdown.Item>
+                    <NavDropdown.Item className={style.dropdownItem} href="/leo">Dr. Leo</NavDropdown.Item>
+                    <NavDropdown.Item className={style.dropdownItem} href="/anna">Dr. Anna</NavDropdown.Item>
+                    <NavDropdown.Item className={style.dropdownItem} href="/justas">Dr. Justas</NavDropdown.Item>
                   </div>
                 </span>
                 <NavLink className={`${style.navLink} ${style.mission}`} to="/our_mission">

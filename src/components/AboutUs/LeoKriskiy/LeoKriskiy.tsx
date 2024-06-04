@@ -8,31 +8,18 @@
 
 import main_logo from "../../../assets/logo/img_ukrops.jpg"
 import styles from "../about_us.module.css"
-import Carousel from "react-bootstrap/Carousel"
 import { useNavigate } from "react-router-dom"
-import { leoCarouselImage } from "../../../utils/constants"
 import { Row } from "react-bootstrap"
 
-const LeoKrivskiy = () => {
+import ImgCarousel from "./ImgCarousel"
 
+const LeoKrivskiy = () => {
   const navigate = useNavigate()
 
   return (
     <>
-      <section>
-        <div className={styles.card}>
-          <Carousel className={`${styles.carousel} col-12`}>
-            {leoCarouselImage.map((image, idx) => (
-              <Carousel.Item key={idx}>
-                <img
-                  src={image}
-                  alt={`Dr_Leo ${idx}`}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+        <ImgCarousel />
 
-        </div>
         <div className="container p-3 my-5 border border-secondary shadow opacity-75" data-bs-spy="scroll"
              data-bs-target=".navbar" data-bs-offset="10">
           <p className={`${styles.article} mx-lg-4`}>
@@ -94,8 +81,10 @@ const LeoKrivskiy = () => {
           </p>
         </div>
         <button className={styles.btn} id={"donate_btn"}>Donate</button>
-        <img className={styles.logo} src={main_logo} alt="main_logo" width="50%" />
-        <Row className={styles.buttonRow}>
+        <img className={`${styles.logo} center`} src={main_logo} alt="main_logo" />
+
+
+        <Row className={`${styles.buttonRow} justify-content-around`}>
           <button className={`${styles.button} mx-2`} id={styles.back_btn}
                   onClick={() => {
                     window.scrollTo({
@@ -129,7 +118,6 @@ const LeoKrivskiy = () => {
           >About Us
           </button>
         </Row>
-      </section>
     </>
   )
 }

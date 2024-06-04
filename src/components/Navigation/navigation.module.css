@@ -47,6 +47,10 @@
     padding-right: 10px;
 }
 
+/*#aboutUsDropdown {*/
+/*color: whitesmoke;*/
+/*}*/
+
 .aboutUs {
     padding: 0;
 }
@@ -59,7 +63,15 @@
     background-color: rgba(164, 182, 194, 0.82);
 }
 
+.dropdownItem{
+    text-decoration: none;
+    color: black;
+}
+
+
+
 .navLink:hover {
+    text-decoration: none;
     transition: all 0.3s ease;
     color: rgba(255, 249, 186, 0.57); /* !important! */
 }

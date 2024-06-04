@@ -1,0 +1,44 @@
+/*
+ * /
+ *  *  *
+ *  *  *   ************************************************************************
+ *  *  *   *  Copyright (c) Author: Igor Volotovskyi *  CZ IT-Design Studio GmbH. *
+ *  *  *   ************************************************************************
+ *  *  *
+ * /
+ */
+
+
+.carousel {
+    transition-duration: 0.6s;
+}
+
+
+.carouselImg {
+    max-width: 50%;
+}
+
+.carousel-control-next {
+    margin-right: 4px;
+}
+
+.carousel-control-prev {
+    margin-left: 12px;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    color: #a4a1a1;
+}
+
+
+
+.carousel-indicators .active {
+    margin-right: 3px;
+    margin-left: 3px;
+    border-style: ridge;
+    /*
+        This will change the "view" button (assumed to be the indicators' active state).
+        Add your styles here.
+    */
+    background-color: #a4a1a1; /* This will change the active indicator color */
+}

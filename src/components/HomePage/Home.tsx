@@ -15,8 +15,8 @@ const Home = () => {
   return (
     <main className={style.main}>
       <section>
-        <div className="col-lg-1 justify-content-center">
-          <button className={`${style.btn} btn-lg  mt-5 justify-content-center`} id={"donate_btn"}>Donate</button>
+        <div className="col-12">
+          <button className={`${style.btn} btn-lg  mt-5`} id={"donate_btn"}>Donate</button>
         </div>
         <div className={`${style.container1} mb-5`}>
           <p className={`${style.text1} mx-2`}>

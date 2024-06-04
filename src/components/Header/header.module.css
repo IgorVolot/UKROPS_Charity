@@ -40,7 +40,6 @@
     font-size: 3em;
     color: #2b2f32;
     text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);
-    /*text-shadow: 0.1em 0.1em 0.1em rgb(245, 218, 141);*/
 }
 
 .header > h2 {
@@ -52,7 +51,6 @@
     font-size: 2em;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    /*color: black;*/
     text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);
 }
 
