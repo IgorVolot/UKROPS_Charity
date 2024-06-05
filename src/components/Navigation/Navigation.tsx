@@ -42,7 +42,8 @@ function Navigation() {
         <Navbar sticky="top" key={expand} expand={expand}
                 className={`${style.navbar} pb-1 ${!visible && style.navbarHidden}`}>
           <Container fluid className={`${style.mainContainer}`}>
-            <Navbar.Brand className={`${style.navbarBrand}`} href="/home"><img src={logo_small} style={logoStyle} alt="small_logo" /></Navbar.Brand>
+            <Navbar.Brand className={`${style.navbarBrand}`} href="/home"><img src={logo_small} style={logoStyle}
+                                                                               alt="small_logo" /></Navbar.Brand>
             <Navbar.Toggle className={`${style.navbarToggler}`} aria-controls={`navbarResponsive-${expand}`} />
             <Navbar.Collapse id={`navbarResponsive-${expand}`}>
               <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -59,7 +60,7 @@ function Navigation() {
                 >
                   <a
                     className={`nav-link dropdown-toggle ${style.navLink}`}
-                    style={{color: "rgb(238, 209, 176)"}}
+                    style={{ color: "rgb(238, 209, 176)" }}
                     href="#"
                     id="aboutUsDropdown"
                     role="button"
@@ -70,9 +71,24 @@ function Navigation() {
                 </a>
                   <div className={`dropdown-menu ${showDropdown ? "show" : ""} ${style.menu}`}
                        aria-labelledby="aboutUsDropdown">
-                    <NavDropdown.Item className={style.dropdownItem} href="/leo">Dr. Leo</NavDropdown.Item>
-                    <NavDropdown.Item className={style.dropdownItem} href="/anna">Dr. Anna</NavDropdown.Item>
-                    <NavDropdown.Item className={style.dropdownItem} href="/justas">Dr. Justas</NavDropdown.Item>
+                    <NavDropdown.Item className={style.dropdownItem}>
+                      <NavLink className={`${style.navLink} `} style={{ color: "black", textDecoration: "none" }}
+                               to="/leo">
+                        Dr. Leo Krivskiy
+                      </NavLink>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item className={style.dropdownItem} >
+                      <NavLink className={`${style.navLink} `} style={{ color: "black", textDecoration: "none" }}
+                               to="/anna">
+                      Dr. Anna Hunter
+                        </NavLink>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item className={style.dropdownItem} >
+                      <NavLink className={`${style.navLink} `} style={{ color: "black", textDecoration: "none" }}
+                               to="/justas">
+                      Dr. Justas Mazunaitis
+                      </NavLink>
+                    </NavDropdown.Item>
                   </div>
                 </span>
                 <NavLink className={`${style.navLink} ${style.mission}`} to="/our_mission">
@@ -93,7 +109,8 @@ function Navigation() {
                   <Nav.Link href="https://www.facebook.com/profile.php?id=100009578859571" target="_blank">
                     <FontAwesomeIcon className={`${style.navIcon} `} icon={faFacebook} style={{ color: "#FFD43B" }} />
                   </Nav.Link>
-                  <Nav.Link href="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr" target="_blank">
+                  <Nav.Link href="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr"
+                            target="_blank">
                     <FontAwesomeIcon className={`${style.navIcon} `} icon={faSquareInstagram}
                                      style={{ color: "#FFD43B" }} />
                   </Nav.Link>
@@ -104,7 +121,6 @@ function Navigation() {
                     <FontAwesomeIcon className={`${style.navIcon}`} icon={faEnvelope} style={{ color: "#FFD43B" }} />
                   </Nav.Link>
                 </div>
-
               </Nav>
             </Navbar.Collapse>
           </Container>

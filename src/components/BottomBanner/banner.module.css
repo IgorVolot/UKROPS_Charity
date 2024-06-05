@@ -32,6 +32,7 @@
         font-size: 1em;
     }
 
+
     .img {
         width: 100%;
         margin: 5px auto;
@@ -45,9 +46,10 @@
     }
 
     .img {
-        width: 90vw;
+        max-width: calc(100vw - 20px);
+        /*width: 90vw;*/
         margin: 5px auto;
-        padding-right: 65px;
+        /*padding-right: 65px;*/
     }
 }
 

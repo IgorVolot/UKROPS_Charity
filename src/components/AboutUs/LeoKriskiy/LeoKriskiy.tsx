@@ -20,7 +20,7 @@ const LeoKrivskiy = () => {
     <>
         <ImgCarousel />
 
-        <div className="container p-3 my-5 border border-secondary shadow opacity-75" data-bs-spy="scroll"
+        <div className="container p-3 my-5 border border-secondary shadow " data-bs-spy="scroll"
              data-bs-target=".navbar" data-bs-offset="10">
           <p className={`${styles.article} mx-lg-4`}>
             As a small charity, I would like to set up realistic, but impactful goals, which would make
@@ -84,8 +84,8 @@ const LeoKrivskiy = () => {
         <img className={`${styles.logo} center`} src={main_logo} alt="main_logo" />
 
 
-        <Row className={`${styles.buttonRow} justify-content-around`}>
-          <button className={`${styles.button} mx-2`} id={styles.back_btn}
+      <Row className={`${styles.buttonRow} justify-content-center align-items-center`}>
+      <button className={`${styles.button} mx-2`} id={styles.back_btn}
                   onClick={() => {
                     window.scrollTo({
                       top: 0,

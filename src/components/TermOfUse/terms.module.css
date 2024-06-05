@@ -9,11 +9,13 @@
  */
 
 
+.header {
+    font-size: 1em;
+}
+
 .block {
     margin: 2rem auto 6rem auto;
-
     max-width: 600px;
-    font-size: 1em;
 }
 
 .text {
@@ -29,7 +31,6 @@
     .block {
         margin: 4rem auto 8rem auto;
         max-width: 1000px;
-        font-size: 1.2em;
     }
     .text {
         margin: 1.5rem auto;

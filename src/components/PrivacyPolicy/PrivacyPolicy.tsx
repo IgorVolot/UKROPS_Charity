@@ -48,19 +48,27 @@ const PrivacyPolicy = () => {
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>IDENTIFYING INFORMATION - NAME</Accordion.Header>
+            <Accordion.Header className={style.header}>IDENTIFYING INFORMATION - NAME</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of information</p>
+              <p>
+                <strong>Specific piece of information</strong>
+              </p>
               <p>Name</p>
-              <p>Legal basis for processing this information</p>
+              <p>
+                <strong>Legal basis for processing this information</strong>
+              </p>
               <ul>
                 <li>The user has provided consent to the processing of their information.</li>
               </ul>
-              <p>Where we get this information</p>
+              <p>
+                <strong>Where we get this information</strong>
+              </p>
               <ul>
                 <li>Information submitted by the consumer.</li>
               </ul>
-              <p>How we use this information</p>
+              <p>
+                <strong>How we use this information</strong>
+              </p>
               <ul>
                 <li>Enforcing our Terms of Service;</li>
                 <li>Marketing and advertising;</li>
@@ -73,7 +81,9 @@ const PrivacyPolicy = () => {
                 <li>Verifying customer information.</li>
               </ul>
 
-              <p>What happens if we don't have this information</p>
+              <p>
+                <strong>What happens if we don't have this information</strong>
+              </p>
               <ul>
                 <li>Our use of your data for enforcing our Terms of Service will not be possible;</li>
                 <li>Our use of your data for marketing and advertising will not be possible;</li>
@@ -90,21 +100,29 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="1">
-            <Accordion.Header>IDENTIFYING INFORMATION - PHONE NUMBER</Accordion.Header>
+            <Accordion.Header className={style.header}>IDENTIFYING INFORMATION - PHONE NUMBER</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of information</p>
+              <p>
+                <strong>Specific piece of information</strong>
+              </p>
               <p>Phone number</p>
-              <p>Legal basis for processing this information</p>
+              <p>
+                <strong>Legal basis for processing this information</strong>
+              </p>
               <ul>
                 <li>The user has provided consent to the processing of their information.</li>
               </ul>
 
-              <p>Where we get this information</p>
+              <p>
+                <strong>Where we get this information</strong>
+              </p>
               <ul>
                 <li>Information submitted by the consumer.</li>
               </ul>
 
-              <p>How we use this information</p>
+              <p>
+                <strong>How we use this information</strong>
+              </p>
               <ul>
                 <li>Enforcing our Terms of Service;</li>
                 <li>Marketing and advertising;</li>
@@ -117,7 +135,9 @@ const PrivacyPolicy = () => {
                 <li>Verifying customer information.</li>
               </ul>
 
-              <p>What happens if we don't have this information</p>
+              <p>
+                <strong>What happens if we don't have this information</strong>
+              </p>
               <ul>
                 <li>Our use of your data for enforcing our Terms of Service will not be possible;</li>
                 <li>Our use of your data for marketing and advertising will not be possible;</li>
@@ -133,22 +153,30 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="2">
-            <Accordion.Header>IDENTIFYING INFORMATION - IP ADDRESS</Accordion.Header>
+            <Accordion.Header className={style.header}>IDENTIFYING INFORMATION - IP ADDRESS</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of information</p>
+              <p>
+                <strong>Specific piece of information</strong>
+              </p>
               <p>IP address</p>
-              <p>Legal basis for processing this information</p>
+              <p>
+                <strong>Legal basis for processing this information</strong>
+              </p>
               <ul>
                 <li>The user has provided consent to the processing of their information.</li>
               </ul>
-              <p>Where we get this information</p>
+              <p>
+                <strong>Where we get this information</strong>
+              </p>
               <ul>
                 <li>Tracking pixels;</li>
                 <li>The observation and recording of activities by the business, such as through the use of cookies.
                 </li>
               </ul>
 
-              <p>How we use this information</p>
+              <p>
+                <strong>How we use this information</strong>
+              </p>
               <ul>
                 <li>Analytics;</li>
                 <li>Counting ad impressions to unique visitors;</li>
@@ -167,7 +195,9 @@ const PrivacyPolicy = () => {
                 <li>Verifying position and quality of ad impressions.</li>
               </ul>
 
-              <p>What happens if we don't have this information</p>
+              <p>
+                <strong>What happens if we don't have this information</strong>
+              </p>
               <ul>
                 <li>Our use of your data for enforcing our Terms of Service will not be possible;</li>
                 <li>Our use of your data for marketing and advertising will not be possible;</li>
@@ -183,19 +213,27 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="3">
-            <Accordion.Header>IDENTIFYING INFORMATION - EMAIL ADDRESS</Accordion.Header>
+            <Accordion.Header className={style.header}>IDENTIFYING INFORMATION - EMAIL ADDRESS</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of information</p>
+              <p>
+                <strong>Specific piece of information</strong>
+              </p>
               <p>Email address</p>
-              <p>Legal basis for processing this information</p>
+              <p>
+                <strong>Legal basis for processing this information</strong>
+              </p>
               <ul>
                 <li>The user has provided consent to the processing of their information.</li>
               </ul>
-              <p>Where we get this information</p>
+              <p>
+                <strong>Where we get this information</strong>
+              </p>
               <ul>
                 <li>Information submitted by the consumer.</li>
               </ul>
-              <p>How we use this information</p>
+              <p>
+                <strong>How we use this information</strong>
+              </p>
               <ul>
                 <li>Enforcing our Terms of Service;</li>
                 <li>Marketing and advertising;</li>
@@ -207,7 +245,9 @@ const PrivacyPolicy = () => {
                 <li>Resolving disputes;</li>
                 <li>Verifying customer information.</li>
               </ul>
-              <p>What happens if we don't have this information</p>
+              <p>
+                <strong>What happens if we don't have this information</strong>
+              </p>
               <ul>
                 <li>Our use of your data for enforcing our Terms of Service will not be possible;</li>
                 <li>Our use of your data for marketing and advertising will not be possible;</li>
@@ -223,21 +263,29 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="4">
-            <Accordion.Header>IDENTIFYING INFORMATION - DEVICE IDENTIFIER</Accordion.Header>
+            <Accordion.Header className={style.header}>IDENTIFYING INFORMATION - DEVICE IDENTIFIER</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of information</p>
+              <p>
+                <strong>Specific piece of information</strong>
+              </p>
               <p>Device identifier</p>
-              <p>Legal basis for processing this information</p>
+              <p>
+                <strong>Legal basis for processing this information</strong>
+              </p>
               <ul>
                 <li>The user has provided consent to the processing of their information.</li>
               </ul>
-              <p>Where we get this information</p>
+              <p>
+                <strong>Where we get this information</strong>
+              </p>
               <ul>
                 <li>Tracking pixels;</li>
                 <li>The observation and recording of activities by the business, such as through the use of cookies.
                 </li>
               </ul>
-              <p>How we use this information</p>
+              <p>
+                <strong>How we use this information</strong>
+              </p>
               <ul>
                 <li>Enforcing our Terms of Service;</li>
                 <li>Marketing and advertising;</li>
@@ -249,7 +297,9 @@ const PrivacyPolicy = () => {
                 <li>Resolving disputes;</li>
                 <li>Verifying customer information.</li>
               </ul>
-              <p>What happens if we don't have this information</p>
+              <p>
+                <strong>What happens if we don't have this information</strong>
+              </p>
               <ul>
                 <li>Our use of your data for enforcing our Terms of Service will not be possible;</li>
                 <li>Our use of your data for marketing and advertising will not be possible;</li>
@@ -265,22 +315,30 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="5">
-            <Accordion.Header>INTERNET OR OTHER ELECTRONIC ACTIVITY - INFORMATION REGARDING YOUR INTERACTION WITH OUR
+            <Accordion.Header className={style.header}>INTERNET OR OTHER ELECTRONIC ACTIVITY - INFORMATION REGARDING YOUR INTERACTION WITH OUR
               WEBSITE OR APPLICATION</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of information</p>
+              <p>
+                <strong>Specific piece of information</strong>
+              </p>
               <p>Information regarding your interaction with our website or application</p>
-              <p>Legal basis for processing this information</p>
+              <p>
+                <strong>Legal basis for processing this information</strong>
+              </p>
               <ul>
                 <li>The user has provided consent to the processing of their information.</li>
               </ul>
-              <p>Where we get this information</p>
+              <p>
+                <strong>Where we get this information</strong>
+              </p>
               <ul>
                 <li>Tracking pixels;</li>
                 <li>The observation and recording of activities by the business, such as through the use of cookies.
                 </li>
               </ul>
-              <p>How we use this information</p>
+              <p>
+                <strong>How we use this information</strong>
+              </p>
               <ul>
                 <li>Enforcing our Terms of Service;</li>
                 <li>Marketing and advertising;</li>
@@ -292,7 +350,9 @@ const PrivacyPolicy = () => {
                 <li>Resolving disputes;</li>
                 <li>Verifying customer information.</li>
               </ul>
-              <p>What happens if we don't have this information</p>
+              <p>
+                <strong>What happens if we don't have this information</strong>
+              </p>
               <ul>
                 <li>Our use of your data for enforcing our Terms of Service will not be possible;</li>
                 <li>Our use of your data for marketing and advertising will not be possible;</li>
@@ -308,22 +368,30 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="6">
-            <Accordion.Header>INTERNET OR OTHER ELECTRONIC ACTIVITY - INFORMATION REGARDING YOUR INTERACTIONS WITH
+            <Accordion.Header className={style.header}>INTERNET OR OTHER ELECTRONIC ACTIVITY - INFORMATION REGARDING YOUR INTERACTIONS WITH
               ADVERTISEMENTS</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of information</p>
+              <p>
+                <strong>Specific piece of information</strong>
+              </p>
               <p>Information regarding your interactions with advertisements</p>
-              <p>Legal basis for processing this information</p>
+              <p>
+                <strong>Legal basis for processing this information</strong>
+              </p>
               <ul>
                 <li>The user has provided consent to the processing of their information.</li>
               </ul>
-              <p>Where we get this information</p>
+              <p>
+                <strong>Where we get this information</strong>
+              </p>
               <ul>
                 <li>Tracking pixels;</li>
                 <li>The observation and recording of activities by the business, such as through the use of cookies.
                 </li>
               </ul>
-              <p>How we use this information</p>
+              <p>
+                <strong>How we use this information</strong>
+              </p>
               <ul>
                 <li>Enforcing our Terms of Service;</li>
                 <li>Marketing and advertising;</li>
@@ -335,7 +403,9 @@ const PrivacyPolicy = () => {
                 <li>Resolving disputes;</li>
                 <li>Verifying customer information.</li>
               </ul>
-              <p>What happens if we don't have this information</p>
+              <p>
+                <strong>What happens if we don't have this information</strong>
+              </p>
               <ul>
                 <li>Our use of your data for enforcing our Terms of Service will not be possible;</li>
                 <li>Our use of your data for marketing and advertising will not be possible;</li>
@@ -362,11 +432,15 @@ const PrivacyPolicy = () => {
 
         <Accordion>
           <Accordion.Item eventKey="7">
-            <Accordion.Header>AIDENTIFYING INFORMATION - NAME</Accordion.Header>
+            <Accordion.Header className={style.header}>AIDENTIFYING INFORMATION - NAME</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of personal information shared</p>
+              <p>
+                <strong>Specific piece of personal information shared</strong>
+              </p>
               <p>Name</p>
-              <p>Categories of third parties with whom personal information is/was shared</p>
+              <p>
+                <strong>Categories of third parties with whom personal information is/was shared</strong>
+              </p>
               <ul>
                 <li>Content management systems;</li>
                 <li>Customer management systems;</li>
@@ -376,7 +450,9 @@ const PrivacyPolicy = () => {
                 <li>Hosting providers;</li>
                 <li>Parties that need to operate the website.</li>
               </ul>
-              <p>Reason(s) for sharing</p>
+              <p>
+                <strong>Reason(s) for sharing</strong>
+              </p>
               <ul>
                 <li>To manage our interactions with you;</li>
                 <li>To market to you via email.</li>
@@ -385,11 +461,15 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="8">
-            <Accordion.Header>IDENTIFYING INFORMATION - PHONE NUMBER</Accordion.Header>
+            <Accordion.Header className={style.header}>IDENTIFYING INFORMATION - PHONE NUMBER</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of personal information shared</p>
+              <p>
+                <strong>Specific piece of personal information shared</strong>
+              </p>
               <p>Phone number</p>
-              <p>Categories of third parties with whom personal information is/was shared</p>
+              <p>
+                <strong>Categories of third parties with whom personal information is/was shared</strong>
+              </p>
               <ul>
                 <li>Content management systems;</li>
                 <li>Customer management systems;</li>
@@ -399,7 +479,9 @@ const PrivacyPolicy = () => {
                 <li>Hosting providers;</li>
                 <li>Parties that need to operate the website.</li>
               </ul>
-              <p>Reason(s) for sharing</p>
+              <p>
+                <strong>Reason(s) for sharing</strong>
+              </p>
               <ul>
                 <li>To manage our interactions with you;</li>
                 <li>To market to you via email.</li>
@@ -408,11 +490,15 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="9">
-            <Accordion.Header>IDENTIFYING INFORMATION - IP ADDRESS</Accordion.Header>
+            <Accordion.Header className={style.header}>IDENTIFYING INFORMATION - IP ADDRESS</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of personal information shared</p>
+              <p>
+                <strong>Specific piece of personal information shared</strong>
+              </p>
               <p>IP address</p>
-              <p>Categories of third parties with whom personal information is/was shared</p>
+              <p>
+                <strong>Categories of third parties with whom personal information is/was shared</strong>
+              </p>
               <ul>
                 <li>Advertising networks;</li>
                 <li>Content management systems;</li>
@@ -426,7 +512,9 @@ const PrivacyPolicy = () => {
                 <li>Parties that need to operate the website;</li>
                 <li>Social networks.</li>
               </ul>
-              <p>Reason(s) for sharing</p>
+              <p>
+                <strong>Reason(s) for sharing</strong>
+              </p>
               <ul>
                 <li>To provide you with advertisements;</li>
                 <li>To manage our interactions with you;</li>
@@ -438,11 +526,15 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="10">
-            <Accordion.Header>IDENTIFYING INFORMATION - EMAIL ADDRESS</Accordion.Header>
+            <Accordion.Header className={style.header}>IDENTIFYING INFORMATION - EMAIL ADDRESS</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of personal information shared</p>
+              <p>
+                <strong>Specific piece of personal information shared</strong>
+              </p>
               <p>Email address</p>
-              <p>Categories of third parties with whom personal information is/was shared</p>
+              <p>
+                <strong>Categories of third parties with whom personal information is/was shared</strong>
+              </p>
               <ul>
                 <li>Content management systems;</li>
                 <li>Customer management systems;</li>
@@ -452,7 +544,9 @@ const PrivacyPolicy = () => {
                 <li>Hosting providers;</li>
                 <li>Parties that need to operate the website.</li>
               </ul>
-              <p>Reason(s) for sharing</p>
+              <p>
+                <strong>Reason(s) for sharing</strong>
+              </p>
               <ul>
                 <li>To manage our interactions with you;</li>
                 <li>To market to you via email.v</li>
@@ -461,11 +555,15 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="11">
-            <Accordion.Header>To market to you via email.</Accordion.Header>
+            <Accordion.Header className={style.header}>To market to you via email.</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of personal information shared</p>
+              <p>
+                <strong>Specific piece of personal information shared</strong>
+              </p>
               <p>Device identifier</p>
-              <p>Categories of third parties with whom personal information is/was shared</p>
+              <p>
+                <strong>Categories of third parties with whom personal information is/was shared</strong>
+              </p>
               <ul>
                 <li>Advertising networks;</li>
                 <li>Content management systems;</li>
@@ -479,7 +577,9 @@ const PrivacyPolicy = () => {
                 <li>Parties that need to operate the website;</li>
                 <li>Social networks.</li>
               </ul>
-              <p>Reason(s) for sharing</p>
+              <p>
+                <strong>Reason(s) for sharing</strong>
+              </p>
               <ul>
                 <li>To provide you with advertisements;</li>
                 <li>To manage our interactions with you;</li>
@@ -491,12 +591,16 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="12">
-            <Accordion.Header>INTERNET OR OTHER ELECTRONIC ACTIVITY - INFORMATION REGARDING YOUR INTERACTION WITH OUR
+            <Accordion.Header className={style.header}>INTERNET OR OTHER ELECTRONIC ACTIVITY - INFORMATION REGARDING YOUR INTERACTION WITH OUR
               WEBSITE OR APPLICATION</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of personal information shared</p>
+              <p>
+                <strong>Specific piece of personal information shared</strong>
+              </p>
               <p>Information regarding your interaction with our website or application</p>
-              <p>Categories of third parties with whom personal information is/was shared</p>
+              <p>
+                <strong>Categories of third parties with whom personal information is/was shared</strong>
+              </p>
               <ul>
                 <li>Advertising networks;</li>
                 <li>Content management systems;</li>
@@ -510,7 +614,9 @@ const PrivacyPolicy = () => {
                 <li>Parties that need to operate the website;</li>
                 <li>Social networks.</li>
               </ul>
-              <p>Reason(s) for sharing</p>
+              <p>
+                <strong>Reason(s) for sharing</strong>
+              </p>
               <ul>
                 <li>To provide you with advertisements;</li>
                 <li>To manage our interactions with you;</li>
@@ -522,12 +628,16 @@ const PrivacyPolicy = () => {
           </Accordion.Item>
 
           <Accordion.Item eventKey="13">
-            <Accordion.Header>INTERNET OR OTHER ELECTRONIC ACTIVITY - INFORMATION REGARDING YOUR INTERACTIONS WITH
+            <Accordion.Header className={style.header}>INTERNET OR OTHER ELECTRONIC ACTIVITY - INFORMATION REGARDING YOUR INTERACTIONS WITH
               ADVERTISEMENTS</Accordion.Header>
             <Accordion.Body>
-              <p>Specific piece of personal information shared</p>
+              <p>
+                <strong>Specific piece of personal information shared</strong>
+              </p>
               <p>Information regarding your interactions with advertisements</p>
-              <p>Categories of third parties with whom personal information is/was shared</p>
+              <p>
+                <strong>Categories of third parties with whom personal information is/was shared</strong>
+              </p>
               <ul>
                 <li>Advertising networks;</li>
                 <li>Content management systems;</li>
@@ -541,7 +651,9 @@ const PrivacyPolicy = () => {
                 <li>Parties that need to operate the website;</li>
                 <li>Social networks.</li>
               </ul>
-              <p>Reason(s) for sharing</p>
+              <p>
+                <strong>Reason(s) for sharing</strong>
+              </p>
               <ul>
                 <li>To provide you with advertisements;</li>
                 <li>To manage our interactions with you;</li>

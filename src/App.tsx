@@ -7,12 +7,11 @@
 /*/
 
 import "./App.css"
-
 import Contacts from "./components/Contacts/Contacts"
 import Home from "./components/HomePage/Home"
 import OurMission from "./components/OurMission/OurMission"
 import OurProject from "./components/OurProjects/OurProjects"
-import {Route, Routes} from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import MainLayOut from "./layouts/MainLayOut"
 import NoPageFound from "./components/NoPageFound/NoPageFound"
 import AboutUs from "./components/AboutUs/AboutUs"
@@ -29,7 +28,7 @@ const App = () => {
     <div className="App container-fluid">
       <Routes>
         <Route path="/" element={<MainLayOut />}>
-          {['', `/`, '/home'].map(path => <Route key={path} path={path} element={<Home />} />)}
+          {[``, `/`, "/home"].map(path => <Route key={path} path={path} element={<Home />} />)}
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/leo" element={<LeoKrivskiy />} />
           <Route path="/anna" element={<AnnaHunter />} />

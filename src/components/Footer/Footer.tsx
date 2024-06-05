@@ -33,13 +33,16 @@ export default function Footer() {
   return (
     <footer className={`${style.footer}`}>
       <div className="container">
+         {/*Top Row for Logo/Images that changes layout based on screen size */}
         <div className="row align-items-center py-3">
-          <div className={`${style.imgContainer} col-md-3`}>
-            <a href={"/home"} rel="noopener noreferrer">
-              <img src={`${img_ukrops}`} alt="Logo" className={`${style.footerLogo} w-75 `} />
+           {/*Logo/Image on left on large screens and top on small screens */}
+          <div className={`${style.imgContainer} col-md-3 order-md-1 order-2`}>
+            <a href="/home" rel="noopener noreferrer">
+              <img src={img_ukrops} alt="Logo" className={`${style.footerLogo}`} />
             </a>
           </div>
-          <div className="col-md-6 text-center">
+           {/*Center Block for Navigation Links */}
+          <div className="col-md-6 text-center order-md-2 order-1">
             <ul className="list-inline mb-0">
               <li className={style.listInlineItem}>
                 <a href={"/contacts"} className="text" style={{ color: "rgba(250,235,215,0.89)" }}>Contacts</a>
@@ -183,14 +186,14 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className={`${style.imgContainer} col-md-3`}>
-            <a className="link"
-               href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview?fbclid=IwAR1ttY_hAVWcnGXaZHIRr0zbdSb9dtBAGMh6j28lik7RayjiC68g_eMgA9k"
-               target="_blank">
-              <img src={cc_cert} alt="CC Certificate" className={`${style.footerImg} w-75 `} />
+           {/*Right side image/link on large screens and bottom on small screens */}
+          <div className={`${style.imgContainer} col-md-3 order-md-3 order-3`}>
+            <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview" target="_blank">
+              <img src={cc_cert} alt="CC Certificate" className={`${style.footerImg}`} />
             </a>
           </div>
         </div>
+
         <div className="row">
           <div className="col text-center">
             <ul className="list-inline mb-3">
@@ -214,7 +217,9 @@ export default function Footer() {
               </li>
             </ul>
             <p className="mb-0">© {new Date().getFullYear()} UKROPS. All rights reserved.</p>
-            <Link className={style.link} to="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview?fbclid=IwAR1ttY_hAVWcnGXaZHIRr0zbdSb9dtBAGMh6j28lik7RayjiC68g_eMgA9k" target="_blank">
+            <Link className={style.link}
+                  to="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview?fbclid=IwAR1ttY_hAVWcnGXaZHIRr0zbdSb9dtBAGMh6j28lik7RayjiC68g_eMgA9k"
+                  target="_blank">
               <p className="mb-0"> UKROPS Medical Charity Registered Charity in England and Wales (charity no.
                 1205865).</p>
             </Link>

@@ -24,7 +24,6 @@
 
 /* Three columns side by side */
 .column {
-    /*float: left;*/
     width: 33.3%;
 }
 
@@ -146,8 +145,6 @@
     cursor: pointer;
     width: 16rem;
     height: 3.5rem;
-    /*margin-top: 4rem;*/
-    /*margin-bottom: 4rem;*/
     font-size: 1em;
 }
 
@@ -168,7 +165,6 @@
 
     .card {
         height: 164rem;
-        /*alignment-baseline: auto;*/
     }
 }
 
@@ -200,9 +196,6 @@
 }
 
 @media screen and (max-width: 1439px) {
-    .column {
-        /*width: 80%;*/
-    }
 
     .text {
         min-height: 22rem;
