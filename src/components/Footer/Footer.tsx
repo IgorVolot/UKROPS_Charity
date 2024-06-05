@@ -15,9 +15,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import img_ukrops from "../../assets/logo/img_ukrops.jpg"
 import Modal from "react-bootstrap/Modal"
 import Button from "react-bootstrap/Button"
-import { Link } from "react-router-dom"
+import { Link, NavLink, useNavigate } from "react-router-dom"
 
 export default function Footer() {
+  const navigate = useNavigate()
   const [showPrivacy, setShowPrivacy] = useState(false)
   const closePrivacy = () => setShowPrivacy(false)
   const showPrivacyModal = () => setShowPrivacy(true)
@@ -37,19 +38,55 @@ export default function Footer() {
         <div className="row align-items-center py-3">
            {/*Logo/Image on left on large screens and top on small screens */}
           <div className={`${style.imgContainer} col-md-3 order-md-1 order-2`}>
-            <a href="/home" rel="noopener noreferrer">
+            <NavLink
+              to="/home"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth"
+                })
+                navigate("/home")
+              }}
+            >
               <img src={img_ukrops} alt="Logo" className={`${style.footerLogo}`} />
-            </a>
+            </NavLink>
           </div>
            {/*Center Block for Navigation Links */}
           <div className="col-md-6 text-center order-md-2 order-1">
             <ul className="list-inline mb-0">
               <li className={style.listInlineItem}>
-                <a href={"/contacts"} className="text" style={{ color: "rgba(250,235,215,0.89)" }}>Contacts</a>
+                <NavLink
+                  to="/contacts"
+                  className="link"
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth"
+                    })
+                    navigate("/contacts")
+                  }}
+                  style={{ color: "rgba(250,235,215,0.89)" }}
+                >Contacts
+                </NavLink>
               </li>
 
               <li className={style.listInlineItem}>
-                <a href={"/about_us"} className="text" style={{ color: "rgba(250,235,215,0.89)" }}>About Us</a>
+                <NavLink
+                  to="/about_us"
+                  className="link"
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth"
+                    })
+                    navigate("/about_us")
+                  }}
+                  style={{ color: "rgba(250,235,215,0.89)" }}
+                >About Us
+                </NavLink>
               </li>
 
               {/*... Terms Of Use Policy Link ...*/}
@@ -82,7 +119,7 @@ export default function Footer() {
                       uses of this Website. You agree that you will not perform any of the following prohibited uses:
                     </p>
                     <p>
-                      <a className={"text-info"} href={"/terms_of_use"}>read more...</a>
+                      <NavLink className={"text-info"} to="/terms_of_use">read more...</NavLink>
                     </p>
                   </Modal.Body>
                   <Modal.Footer>
@@ -130,7 +167,7 @@ export default function Footer() {
                       the past and how you use the Website.
                     </p>
                     <p>
-                      <a className={"text-info"} href={"/cookie_policy"}>read more...</a>
+                      <NavLink className={"text-info"} to="/cookie_policy">read more...</NavLink>
                     </p>
                   </Modal.Body>
                   <Modal.Footer>
@@ -171,7 +208,7 @@ export default function Footer() {
                       HAPPENS IF WE DON'T HAVE IT, AND THE LEGAL BASIS FOR PROCESSING THIS INFORMATION
                     </p>
                     <p>
-                      <a className={"text-info"} href={"/privacy"}>read more...</a>
+                      <NavLink className={"text-info"} to="/privacy">read more...</NavLink>
                     </p>
                   </Modal.Body>
                   <Modal.Footer>
@@ -188,7 +225,7 @@ export default function Footer() {
           </div>
            {/*Right side image/link on large screens and bottom on small screens */}
           <div className={`${style.imgContainer} col-md-3 order-md-3 order-3`}>
-            <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview" target="_blank">
+            <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview" rel="noopener noreferrer" target="_blank">
               <img src={cc_cert} alt="CC Certificate" className={`${style.footerImg}`} />
             </a>
           </div>

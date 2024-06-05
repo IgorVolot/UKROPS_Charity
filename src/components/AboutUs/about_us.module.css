@@ -29,7 +29,7 @@
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 45rem;
+    height: 47rem;
 }
 
 .img {
@@ -68,7 +68,7 @@
 }
 
 .text {
-    min-height: 12rem;
+    min-height: 13rem;
 }
 
 .link {
@@ -146,6 +146,7 @@
     width: 16rem;
     height: 3.5rem;
     font-size: 1em;
+    margin-bottom: 20px;
 }
 
 .button:hover {
@@ -157,18 +158,54 @@
 
 /* Display the columns below each other instead of side by side on small screens */
 
-@media screen and (min-width: 2561px) {
+@media screen and (min-width: 3600px) {
+    .row {
+        height: 100rem;
+    }
 
-    .text {
-        min-height: 10rem;
+    /*.clearfix {*/
+    /*    min-height: 66rem;*/
+    /*}*/
+
+
+    .container {
+        height: 36rem;
     }
 
     .card {
-        height: 164rem;
+        height: max-content;
+    }
+
+    .text {
+        /*font-size: 2em;*/
+        height: 24rem;
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+
+    .clearfix {
+        min-height: 62rem;
+        padding: 3rem;
+    }
+
+
+    .container {
+        min-height: 28rem;
+    }
+
+    .card {
+        min-height: 62rem;
+    }
+
+    .text {
+        font-size: 2em;
+        height: 20rem;
     }
 }
 
-@media screen and (min-width: 1681px) {
+@media screen and (min-width: 1679px) {
     .logo {
         max-width: 40%;
     }
@@ -181,17 +218,17 @@
     }
 
     .text {
-        min-height: 10rem;
+        min-height: 12rem;
     }
 
     .card {
-        height: 46rem;
+        height: 48rem;
         alignment-baseline: auto;
     }
 
     .button {
         width: 12rem;
-        margin: 1rem auto;
+        margin: 2rem auto;
     }
 }
 

@@ -22,7 +22,7 @@ const AboutUs = () => {
   return (
     <>
       <Row className={styles.row}>
-        <Col lg={4} className={`{${styles.column} ${styles.clearfix} `}>
+        <Col lg={4} className={`{${styles.column} ${styles.clearfix} order-md-1 order-1 `}>
           <div className={`${styles.card}`}>
             <p>
               <img className={`${styles.img} w-50 m-3`} src={leo} alt="Leo" />
@@ -55,7 +55,7 @@ const AboutUs = () => {
           </div>
         </Col>
 
-        <Col lg={4} className={`{${styles.column} ${styles.clearfix} `}>
+        <Col lg={4} className={`{${styles.column} ${styles.clearfix} order-md-2 order-2 `}>
           <div className={styles.card}>
             <p>
               <img className={`${styles.img} w-50 m-3`} src={anna} alt="Anna" />
@@ -88,12 +88,13 @@ const AboutUs = () => {
 
             </div>
           </div>
-          <div>
+        </Col>
+          <div className="order-md-4 order-3">
             <button className={`${styles.btn} `}>Donate</button>
           </div>
-        </Col>
 
-        <Col lg={4} className={`{${styles.column} ${styles.clearfix} `}>
+
+        <Col lg={4} className={`{${styles.column} ${styles.clearfix} order-md-3 order-4`}>
           <div className={styles.card}>
             <p>
               <img className={`${styles.img} w-50 m-3`} src={justas} alt="Justas" />

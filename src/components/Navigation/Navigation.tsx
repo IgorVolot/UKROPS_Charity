@@ -16,11 +16,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faLinkedin, faSquareInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import style from "./navigation.module.css"
-import { NavLink, useLocation } from "react-router-dom"
+import { NavLink, useLocation, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import NavDropdown from "react-bootstrap/NavDropdown"
 
 function Navigation() {
+  const navigate = useNavigate()
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY)
   const [visible, setVisible] = useState(true)
   const [showDropdown, setShowDropdown] = useState(false)
@@ -47,10 +48,33 @@ function Navigation() {
             <Navbar.Toggle className={`${style.navbarToggler}`} aria-controls={`navbarResponsive-${expand}`} />
             <Navbar.Collapse id={`navbarResponsive-${expand}`}>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <NavLink id={style.homeLink} className={`${style.navLink}`} to="/home">
+                <NavLink
+                  to="/home"
+                  id={style.homeLink}
+                  className={`${style.navLink}`}
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth"
+                    })
+                    navigate("/home")
+                  }}
+                >
                   Home
                 </NavLink>
-                <NavLink className={`${style.navLink} ${style.aboutUs}`} to="/about_us">
+                <NavLink
+                  to="/about_us"
+                  className={`${style.navLink} ${style.aboutUs}`}
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth"
+                    })
+                    navigate("/about_us")
+                  }}
+                >
                   About Us
                 </NavLink>
                 <span
@@ -72,32 +96,98 @@ function Navigation() {
                   <div className={`dropdown-menu ${showDropdown ? "show" : ""} ${style.menu}`}
                        aria-labelledby="aboutUsDropdown">
                     <NavDropdown.Item className={style.dropdownItem}>
-                      <NavLink className={`${style.navLink} `} style={{ color: "black", textDecoration: "none" }}
-                               to="/leo">
+                      <NavLink
+                        to="/leo"
+                        className={`${style.navLink} `}
+                        style={{ color: "black", textDecoration: "none" }}
+                        onClick={() => {
+                          window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth"
+                          })
+                          navigate("/leo")
+                        }}
+                      >
                         Dr. Leo Krivskiy
                       </NavLink>
                     </NavDropdown.Item>
                     <NavDropdown.Item className={style.dropdownItem} >
-                      <NavLink className={`${style.navLink} `} style={{ color: "black", textDecoration: "none" }}
-                               to="/anna">
+                      <NavLink
+                        to="/anna"
+                        className={`${style.navLink} `}
+                        style={{ color: "black", textDecoration: "none" }}
+                        onClick={() => {
+                          window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth"
+                          })
+                          navigate("/anna")
+                        }}
+                      >
                       Dr. Anna Hunter
                         </NavLink>
                     </NavDropdown.Item>
                     <NavDropdown.Item className={style.dropdownItem} >
-                      <NavLink className={`${style.navLink} `} style={{ color: "black", textDecoration: "none" }}
-                               to="/justas">
+                      <NavLink
+                        to="/justas"
+                        className={`${style.navLink} `}
+                        style={{ color: "black", textDecoration: "none" }}
+                        onClick={() => {
+                          window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth"
+                          })
+                          navigate("/justas")
+                        }}
+                      >
                       Dr. Justas Mazunaitis
                       </NavLink>
                     </NavDropdown.Item>
                   </div>
                 </span>
-                <NavLink className={`${style.navLink} ${style.mission}`} to="/our_mission">
+                <NavLink
+                  to="/our_mission"
+                  className={`${style.navLink} ${style.mission}`}
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth"
+                    })
+                    navigate("/our_mission")
+                  }}
+                >
                   Our Mission
                 </NavLink>
-                <NavLink className={`${style.navLink}`} to="/our_projects">
+                <NavLink
+                  to="/our_projects"
+                  className={`${style.navLink}`}
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth"
+                    })
+                    navigate("/our_projects")
+                  }}
+                >
                   Our Projects
                 </NavLink>
-                <NavLink className={`${style.navLink} pe-4 pb-4`} to="/contacts">
+                <NavLink
+                  to="/contacts"
+                  className={`${style.navLink} pe-4 pb-4`}
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth"
+                    })
+                    navigate("/contacts")
+                  }}
+                >
                   Contacts
                 </NavLink>
                 <div className="d-flex align-items-center">
