@@ -13,7 +13,7 @@ import Navbar from "react-bootstrap/Navbar"
 import logo_small from "../../assets/logo/icon_ukrops-2x.png"
 import { logoStyle } from "../../utils/constants"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faLinkedin, faSquareInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faLinkedin, faSquareInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import style from "./navigation.module.css"
 import { NavLink, useLocation, useNavigate } from "react-router-dom"
@@ -33,7 +33,7 @@ function Navigation() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY
-      setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 20) || currentScrollPos < 20)
+      setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 30) || currentScrollPos < 30)
       setPrevScrollPos(currentScrollPos)
     }
 
@@ -47,8 +47,20 @@ function Navigation() {
         <Navbar sticky="top" key={expand} expand={expand}
                 className={`${style.navbar} pb-1 ${!visible && style.navbarHidden}`}>
           <Container fluid className={`${style.mainContainer}`}>
-            <Navbar.Brand className={`${style.navbarBrand}`} href="/home"><img src={logo_small} style={logoStyle}
-                                                                               alt="small_logo" /></Navbar.Brand>
+            <Navbar.Brand className={`${style.navbarBrand}`}>
+              <NavLink
+                to="/home" onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth"
+                })
+                navigate("/home")
+              }}>
+                <img src={logo_small} style={logoStyle} alt="small_logo" />
+              </NavLink>
+
+            </Navbar.Brand>
             <Navbar.Toggle className={`${style.navbarToggler}`} aria-controls={`navbarResponsive-${expand}`} />
             <Navbar.Collapse id={`navbarResponsive-${expand}`}>
               <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -190,25 +202,24 @@ function Navigation() {
                 >
                   Contacts
                 </NavLink>
-                <div className="d-flex align-items-center">
+                <div className="d-flex ">
                   <Nav.Link
                     href="https://www.linkedin.com/in/leo-krivski-3b1a47239/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_apph"
                     target="_blank">
-                    <FontAwesomeIcon className={`${style.navIcon}`} icon={faLinkedin} style={{ color: "#FFD43B" }} />
+                    <FontAwesomeIcon className={`${style.navIcon}`} icon={faLinkedin} />
                   </Nav.Link>
                   <Nav.Link href="https://www.facebook.com/profile.php?id=100009578859571" target="_blank">
-                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faFacebook} style={{ color: "#FFD43B" }} />
+                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faFacebook} />
                   </Nav.Link>
                   <Nav.Link href="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr"
                             target="_blank">
-                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faSquareInstagram}
-                                     style={{ color: "#FFD43B" }} />
+                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faSquareInstagram} />
                   </Nav.Link>
-                  <Nav.Link href="">
-                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faYoutube} style={{ color: "#FFD43B" }} />
-                  </Nav.Link>
+                  {/*<Nav.Link href="">*/}
+                  {/*  <FontAwesomeIcon className={`${style.navIcon} `} icon={faYoutube} style={{ color: "#FFD43B" }} />*/}
+                  {/*</Nav.Link>*/}
                   <Nav.Link href="mailto:leo@ukropsmedical.org">
-                    <FontAwesomeIcon className={`${style.navIcon}`} icon={faEnvelope} style={{ color: "#FFD43B" }} />
+                    <FontAwesomeIcon className={`${style.navIcon}`} icon={faEnvelope}  />
                   </Nav.Link>
                 </div>
               </Nav>

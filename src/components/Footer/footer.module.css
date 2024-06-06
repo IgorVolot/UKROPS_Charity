@@ -43,6 +43,14 @@
     text-decoration: none;
 }
 
+.linkIcon {
+    color: burlywood;
+}
+
+.linkIcon:hover {
+    color: whitesmoke;
+}
+
 @media screen and (max-width: 768px) {
     .footerLogo, .footerImg {
         width: 100%;

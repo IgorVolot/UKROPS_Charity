@@ -22,17 +22,7 @@
 }
 
 
-/* Three columns side by side */
-.column {
-    width: 33.3%;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 47rem;
-}
-
-.img {
+.card, .img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -41,24 +31,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Some left and right padding inside the container */
-.container {
-    padding: 0 16px;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.container > p {
-    color: #2c3034;
 }
 
 .article, .text {
@@ -77,38 +49,29 @@
     color: #2c3034;
 }
 
-/* Clear floats */
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .title {
     font-family: "Academy Engraved LET", serif;
 }
 
-#leo_signature {
+#leoSignature {
     font-family: 'Chettalbury Italic', serif;
     font-size: 2em;
     color: black;
+    padding: 1rem 2rem;
 }
 
-#anna_signature {
+#annaSignature {
     font-family: "KattyDiona Italic", serif;
     font-size: 2em;
     color: #2b2f32;
+    padding-left: 3rem;
 }
 
-#justas_signature {
+#justasSignature {
     font-family: "Arathevil Italic", serif;
     font-size: 2em;
     color: #053b75;
-}
-
-
-#justasSignature {
-    font-size: 1em;
+    padding-left: 1rem;
 }
 
 /* Donate button */
@@ -132,7 +95,7 @@
 }
 
 .buttonRow {
-    margin: 2rem auto;
+    margin: 4rem auto;
 }
 
 .button {
@@ -146,7 +109,7 @@
     width: 16rem;
     height: 3.5rem;
     font-size: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .button:hover {
@@ -155,143 +118,17 @@
     transition-duration: 0.6s;
 }
 
-
-/* Display the columns below each other instead of side by side on small screens */
-
-@media screen and (min-width: 3600px) {
-    .row {
-        height: 100rem;
-    }
-
-    /*.clearfix {*/
-    /*    min-height: 66rem;*/
-    /*}*/
-
-
-    .container {
-        height: 36rem;
-    }
-
-    .card {
-        height: max-content;
-    }
-
-    .text {
-        /*font-size: 2em;*/
-        height: 24rem;
-    }
-
-}
-
-@media screen and (min-width: 2560px) {
-
-    .clearfix {
-        min-height: 62rem;
-        padding: 3rem;
-    }
-
-
-    .container {
-        min-height: 28rem;
-    }
-
-    .card {
-        min-height: 62rem;
-    }
-
-    .text {
-        font-size: 2em;
-        height: 20rem;
-    }
-}
-
 @media screen and (min-width: 1679px) {
     .logo {
         max-width: 40%;
     }
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: calc(100vw - 40rem);
-        margin: auto;
-    }
-
-    .text {
-        min-height: 12rem;
-    }
-
-    .card {
-        height: 48rem;
-        alignment-baseline: auto;
-    }
-
     .button {
         width: 12rem;
         margin: 2rem auto;
     }
 }
 
-@media screen and (max-width: 1439px) {
-
-    .text {
-        min-height: 22rem;
-    }
-
-    .card {
-        height: 47rem;
-        alignment-baseline: auto;
-    }
-
-    .button {
-        width: 12rem;
-        margin: 1rem auto;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: calc(100vw - 15rem);
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-
-    .text {
-        min-height: 8rem;
-    }
-
-    .buttonRow {
-        display: grid;
-        flex-direction: column;
-    }
-
-    .button {
-        width: 12rem;
-        margin: 1rem auto;
-    }
-
-    .btn {
-        margin: 2rem auto;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .card {
-        height: 38rem;
-    }
-
-    .text {
-        min-height: 8rem;
-    }
-}
 
 
 

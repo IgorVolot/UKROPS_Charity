@@ -34,9 +34,9 @@ export default function Footer() {
   return (
     <footer className={`${style.footer}`}>
       <div className="container">
-         {/*Top Row for Logo/Images that changes layout based on screen size */}
+        {/*Top Row for Logo/Images that changes layout based on screen size */}
         <div className="row align-items-center py-3">
-           {/*Logo/Image on left on large screens and top on small screens */}
+          {/*Logo/Image on left on large screens and top on small screens */}
           <div className={`${style.imgContainer} col-md-3 order-md-1 order-2`}>
             <NavLink
               to="/home"
@@ -52,7 +52,7 @@ export default function Footer() {
               <img src={img_ukrops} alt="Logo" className={`${style.footerLogo}`} />
             </NavLink>
           </div>
-           {/*Center Block for Navigation Links */}
+          {/*Center Block for Navigation Links */}
           <div className="col-md-6 text-center order-md-2 order-1">
             <ul className="list-inline mb-0">
               <li className={style.listInlineItem}>
@@ -223,9 +223,11 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-           {/*Right side image/link on large screens and bottom on small screens */}
+          {/*Right side image/link on large screens and bottom on small screens */}
           <div className={`${style.imgContainer} col-md-3 order-md-3 order-3`}>
-            <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview"
+              rel="noopener noreferrer" target="_blank">
               <img src={cc_cert} alt="CC Certificate" className={`${style.footerImg}`} />
             </a>
           </div>
@@ -235,29 +237,33 @@ export default function Footer() {
           <div className="col text-center">
             <ul className="list-inline mb-3">
               <li className="list-inline-item p-1">
-                <FontAwesomeIcon href="mailto:leo@ukropsmedical.org" icon={faEnvelope} size="xl"
-                                 style={{ color: "burlywood" }} />
+                <Link
+                  to="https://www.linkedin.com/in/leo-krivski-3b1a47239/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank">
+                  <FontAwesomeIcon className={`${style.linkIcon}`} icon={faLinkedin} size="xl" />
+                </Link>
               </li>
               <li className="list-inline-item p-1">
-                <FontAwesomeIcon href="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr"
-                                 target="_blank"
-                                 icon={faSquareInstagram} size="xl" style={{ color: "burlywood" }} />
+                <Link to="https://www.facebook.com/profile.php?id=100009578859571" target="_blank">
+                  <FontAwesomeIcon className={`${style.linkIcon}`} icon={faFacebook} size="xl" />
+                </Link>
               </li>
               <li className="list-inline-item p-1">
-                <FontAwesomeIcon href="https://www.facebook.com/profile.php?id=100009578859571" target="_blank"
-                                 icon={faFacebook} size="xl" style={{ color: "burlywood" }} />
+                <Link to="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr" target="_blank">
+                  <FontAwesomeIcon className={`${style.linkIcon}`} icon={faSquareInstagram} size="xl" />
+                </Link>
               </li>
               <li className="list-inline-item p-1">
-                <FontAwesomeIcon
-                  href="https://www.linkedin.com/in/leo-krivski-3b1a47239/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                  target="_blank" icon={faLinkedin} size="xl" style={{ color: "burlywood" }} />
+                <Link to="mailto:leo@ukropsmedical.org">
+                  <FontAwesomeIcon className={`${style.linkIcon}`} icon={faEnvelope} size="xl" />
+                </Link>
               </li>
             </ul>
             <p className="mb-0">© {new Date().getFullYear()} UKROPS. All rights reserved.</p>
             <Link className={style.link}
                   to="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5226224/charity-overview?fbclid=IwAR1ttY_hAVWcnGXaZHIRr0zbdSb9dtBAGMh6j28lik7RayjiC68g_eMgA9k"
                   target="_blank">
-              <p className="mb-0"> UKROPS Medical Charity Registered Charity in England and Wales (charity no.
+            <p className="mb-0"> UKROPS Medical Charity Registered Charity in England and Wales (charity no.
                 1205865).</p>
             </Link>
             <Link className={style.link} to="mailto:cz.it.design.studio@gmail.com">

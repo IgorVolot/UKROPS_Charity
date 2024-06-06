@@ -19,7 +19,7 @@ const BottomBanner = () => {
   return (
     <div className={`${style.banner} p-3`}>
       <div className="container">
-        <p className={`${style.title} text-center mt-2 mb-1`}>Kindred resources</p>
+        <p className={`${style.title} text-center mt-2 mb-1`}>Related organisations</p>
         <div className=" justify-content-around mb-2">
           <Link to={"https://www.leosrow.com/"} target="_blank" rel="noopener noreferrer">
             <img src={leoRow} className={`${style.img}  `} alt="leos_row"/>
@@ -28,7 +28,7 @@ const BottomBanner = () => {
             <img src={leoBlog} className={`${style.img} `} alt="leo_blog"/>
           </Link>
           <Link to={"https://www.justgiving.com/crowdfunding/leonid-krivskiy"} target="_blank" rel="noopener noreferrer">
-            <img src={crowdfunding} className={`${style.img}  `} alt="crowdfunding"/>
+            <img src={crowdfunding} className={`${style.img} `} alt="crowdfunding"/>
           </Link>
         </div>
       </div>

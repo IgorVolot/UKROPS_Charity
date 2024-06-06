@@ -14,21 +14,22 @@
     border-top: #ffffff ridge;
     border-bottom: #ffffff groove;
     background-color: #ffffff;
-    font-family: "Abril Fatface", serif;
-    font-size: 1.2em;
+    /*font-family: "Abril Fatface", serif;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
     background-image: url("../../assets/background/header-background.jpg");
     background-size: cover;
     opacity: 0.95;
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    box-shadow: 2px 2px 5px rgba(102, 150, 117, 0.93);
+    /*box-shadow: 2px 2px 5px rgba(102, 150, 117, 0.93);*/
     position: fixed;
     transition: top 0.6s;
     max-width: calc(100vw - 25px);
 }
 
 .mainContainer {
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 .navbarBrand {
@@ -36,7 +37,7 @@
 }
 
 .navbarHidden {
-    top: -120px !important; /* Adjust this value based on the height of your Navbar */
+    top: -130px !important; /* Adjust this value based on the height of your Navbar */
     transition: all 0.3s ease;
 }
 
@@ -45,7 +46,6 @@
     text-decoration: none;
     padding-right: 10px;
 }
-
 
 .aboutUs {
     padding: 0;
@@ -56,7 +56,6 @@
 }
 
 .menu {
-
     margin-top: 0;
     background-color: rgba(164, 182, 194, 0.82);
 }
@@ -70,7 +69,7 @@
 .navLink:hover {
     text-decoration: none;
     transition: all 0.3s ease;
-    color: rgba(255, 249, 186, 0.57); /* !important! */
+    color: ghostwhite;
 }
 
 .navLink:global.active {
@@ -81,6 +80,15 @@
     background-color: rgb(232, 224, 216);
     color: rgb(255, 255, 255);
 }
+
+.navIcon {
+    color: #FFD43B;
+}
+
+.navIcon:hover {
+    color: ghostwhite;
+}
+
 
 @media screen and (max-width: 768px) {
 

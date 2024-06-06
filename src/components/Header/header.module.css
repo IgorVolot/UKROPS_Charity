@@ -12,7 +12,7 @@
 /* Header */
 
 .header{
-    padding-top: 12rem;
+    padding-top: 10rem;
     background-color: rgba(173, 186, 227, 0.32);
 
     border-bottom-left-radius: 7px;
@@ -39,7 +39,7 @@
     font-style: normal;
     font-size: 3em;
     color: #2b2f32;
-    text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);
+    /*text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);*/
 }
 
 .header > h2 {
@@ -51,7 +51,7 @@
     font-size: 2em;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);
+    /*text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);*/
 }
 
 @media screen and (max-width: 768px) {
