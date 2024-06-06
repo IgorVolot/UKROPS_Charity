@@ -22,14 +22,18 @@ import NavDropdown from "react-bootstrap/NavDropdown"
 
 function Navigation() {
   const navigate = useNavigate()
+  const [showDropdown, setShowDropdown] = useState(false)
+
+  const toggleDropdown = () => setShowDropdown(!showDropdown)
+
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY)
   const [visible, setVisible] = useState(true)
-  const [showDropdown, setShowDropdown] = useState(false)
+
   useLocation()
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY
-      setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0) || currentScrollPos < 20)
+      setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 20) || currentScrollPos < 20)
       setPrevScrollPos(currentScrollPos)
     }
 
@@ -77,22 +81,18 @@ function Navigation() {
                 >
                   About Us
                 </NavLink>
-                <span
-                  className={`dropdown ${showDropdown ? "show" : ""}`}
-                  onMouseEnter={() => setShowDropdown(true)}
-                  onMouseLeave={() => setShowDropdown(false)}
-                >
-                  <a
+                <span className={`dropdown ${showDropdown ? "show" : ""}`}>
+                  <button
                     className={`nav-link dropdown-toggle ${style.navLink}`}
                     style={{ color: "rgb(238, 209, 176)" }}
-                    href="#"
                     id="aboutUsDropdown"
                     role="button"
-                    data-bs-toggle="dropdown"
+                    onClick={toggleDropdown}
                     aria-haspopup="true"
-                    aria-expanded={false}
+                    aria-expanded={showDropdown}
                   >
-                </a>
+                  </button>
+
                   <div className={`dropdown-menu ${showDropdown ? "show" : ""} ${style.menu}`}
                        aria-labelledby="aboutUsDropdown">
                     <NavDropdown.Item className={style.dropdownItem}>
@@ -112,7 +112,7 @@ function Navigation() {
                         Dr. Leo Krivskiy
                       </NavLink>
                     </NavDropdown.Item>
-                    <NavDropdown.Item className={style.dropdownItem} >
+                    <NavDropdown.Item className={style.dropdownItem}>
                       <NavLink
                         to="/anna"
                         className={`${style.navLink} `}
@@ -129,7 +129,7 @@ function Navigation() {
                       Dr. Anna Hunter
                         </NavLink>
                     </NavDropdown.Item>
-                    <NavDropdown.Item className={style.dropdownItem} >
+                    <NavDropdown.Item className={style.dropdownItem}>
                       <NavLink
                         to="/justas"
                         className={`${style.navLink} `}
