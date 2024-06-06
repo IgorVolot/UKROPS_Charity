@@ -37,7 +37,7 @@ main {
     overflow: auto;
     scroll-snap-align: center;
     line-height: 1.6;
-    text-indent: 30px;
+    text-indent: 50px;
 }
 
 .container2 {
@@ -60,7 +60,7 @@ main {
     color: antiquewhite;
     line-height: 1.8;
     font-size: 1.3em;
-    text-indent: 30px;
+    text-indent: 50px;
 }
 
 .link1 {

@@ -15,23 +15,22 @@ const Home = () => {
 
   return (
     <main className={style.main}>
-      <ModalDisclaimer/>
+      <ModalDisclaimer />
       <section>
         <div className="col-12">
           <button className={`${style.btn} btn-lg  mt-5`} id={"donate_btn"}>Donate</button>
         </div>
         <div className={`${style.container1} mb-5`}>
           <p className={`${style.text1} mx-2`}>
-            The UKROPS Medical Charity was formed by a group of UK doctors to provide a direct aid to
-            Ukrainian medics. It was a logical progression of the work that was already being done by its founder <a
+            The UKROPS Medical Charity was formed by a group of UK doctors to provide a direct aid to Ukrainian medics.
+            It was a logical progression of the work that was already being done by its founder <a
             className={style.link1} href={"/leo"} title="About us">Dr Leonid Krivskiy</a> who had started raising money
-            to
-            help his
+            to help his
             <a className={style.link1} href="https://www.justgiving.com/crowdfunding/leonid-krivskiy" target="_blank"
                title="Crowdfunding to Ukrainian doctors, and frontline medics. on JustGiving"> Ukrainian
-              colleagues </a> since the beginning of Russian invasion.<br />
-
-
+              colleagues </a> since the beginning of Russian invasion.
+          </p>
+          <p className={`${style.text1} mx-2`}>
             He has been sourcing and delivering tactical medical and hospital disposables into
             <a className={style.link1} href="https://ukrivski.com/category/my-trips-to-ukraine/" target="_blank"
                title="Leo Krivski - My trips to Ukraine"> Ukraine </a> as well as worked alongside his Ukrainian
@@ -61,20 +60,18 @@ const Home = () => {
             Sometimes, a word from a colleague
             who is thousand miles away, but cares deeply about their plight is just as valuable as a medical
             kit that we could source
-            for them.<br /><br />
-
-            Leo has partnered with his UK anaesthetic colleagues to form Ukrops Medical Charity to be able
-            to take his previous
-            humanitarian work in Ukraine to another level building upon the foundation that has already been
-            established. Based on the
-            funds that we will be able to raise we will be getting involved in the projects that will have a
-            long-lasting and meaningful
-            impact on the professional lives of our Ukrainian colleagues. We will continue to get involved
-            in education and training
-            programmes including bringing the colleagues over to the UK for Clinical Attachments, organising
-            online and in-person lectures,
-            seminars, and master classes.<br /><br />
-
+            for them.
+          </p>
+          <p className={`${style.text2}  mx-2 mx-lg-4`}>
+            Leo has partnered with his UK anaesthetic colleagues to form Ukrops Medical Charity to be able to take his
+            previous humanitarian work in Ukraine to another level building upon the foundation that has already been
+            established. Based on the funds that we will be able to raise we will be getting involved in the projects
+            that will have a long-lasting and meaningful impact on the professional lives of our Ukrainian colleagues.
+            We will continue to get involved in education and training programmes including bringing the colleagues over
+            to the UK for Clinical Attachments, organising online and in-person lectures, seminars, and master
+            classes.
+          </p>
+          <p className={`${style.text2}  mx-2 mx-lg-4`}>
             Since recently, we have also partnered with
             <a className={style.link2} href="https://www.medicallifelines.org.uk/" target="_blank"
                title="Medical Life Lines"> Medical Life Lines UK </a> who have been sourcing and delivering
@@ -83,14 +80,15 @@ const Home = () => {
                title="A new partnership and the Charity update. – Leo Krivski"> With their help</a>, we have
             made a few successful deliveries of tactical medical kit and hospital disposables to hospitals
             and stabilisation facilities across Ukraine. We are planning to strengthen our partnership in
-            the future.<br /><br />
-
-            Dr Krivskiy is also taking on an unsupported solo transatlantic rowing challenge in January,
-            2025 to raise money for his charity. <br /><br />
-
-            Please help us help our Ukrainian colleagues heal the wounds of this terrible war.<br />
+            the future.
           </p>
-
+          <p className={`${style.text2}  mx-2 mx-lg-4`}>
+            Dr Krivskiy is also taking on an unsupported solo transatlantic rowing challenge in January,
+            2025 to raise money for his charity.
+          </p>
+          <p className={`${style.text2}  mx-2 mx-lg-4`}>
+            Please help us help our Ukrainian colleagues heal the wounds of this terrible war.
+          </p>
         </div>
       </article>
       <div className="col-lg-1 justify-content-center ">

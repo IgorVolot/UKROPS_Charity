@@ -27,7 +27,7 @@ const AboutUs = () => {
       <div className="d-flex justify-content-center">
         <Row md={1} className="g-4 pt-lg-4">
           <Card className={`${styles.card} mx-3 `} border="secondary" style={{ width: "20rem", borderRadius: "0" }}>
-            <Card.Img variant="top" src={leo} alt="Leo" style={{ width: "230px", height: "auto" }} />
+            <Card.Img variant="top" src={leo} alt="Leo" style={{ width: "300px", height: "auto", padding: "20px" }} />
             <Card.Body>
               <Card.Title>Dr. Leo Krivskiy</Card.Title>
               <Card.Text>
@@ -60,7 +60,7 @@ const AboutUs = () => {
           </Card>
 
           <Card className={`${styles.card} mx-3`} border="secondary" style={{ width: "20rem", borderRadius: "0" }}>
-            <Card.Img variant="top" src={anna} alt="Anna" style={{ width: "230px", height: "auto" }} />
+            <Card.Img variant="top" src={anna} alt="Anna" style={{ width: "300px", height: "auto", padding: "20px" }} />
             <Card.Body>
               <Card.Title>Dr. Anna Hunter</Card.Title>
               <Card.Text>
@@ -92,7 +92,7 @@ const AboutUs = () => {
           </Card>
 
           <Card className={`${styles.card} mx-3 `} border="secondary" style={{ width: "20rem", borderRadius: "0" }}>
-            <Card.Img variant="top" src={justas} alt="Justas" style={{ width: "230px", height: "auto" }} />
+            <Card.Img variant="top" src={justas} alt="Justas" style={{ width: "300px", height: "auto", padding: "20px" }} />
             <Card.Body>
               <Card.Title>Dr. Justas Mazunaitis</Card.Title>
               <Card.Text>
