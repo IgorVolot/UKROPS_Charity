@@ -31,7 +31,7 @@ const OurProjects = () => {
                 <source src={media} type="video/mp4" />
               </video>
 
-              <div className="px-lg-5">
+              <div className="">
                 <p className={`${style.text}`}>In January 2025, Leo will embark on the extraordinary challenge of <a
                   href="https://www.leosrow.com/the-challenge" rel="noopener noreferrer" target="_blank">
                   rowing solo</a> across the Atlantic. Starting from Tenerife and finishing in Barbados, this voyage is
@@ -61,11 +61,11 @@ const OurProjects = () => {
             <div className={style.p}>
               <a href="https://www.justgiving.com/crowdfunding/leonid-krivskiy" target="_blank"
                  rel="noopener noreferrer">
-                <img className={`${style.img1} float-start p-sm-0 p-md-1 mx-sm-0 mx-lg-2 `} src={img1} alt="volounteers"
-                     style={{width: "420px", height: "auto"}} />
+                <img className={`${style.img1} float-start p-md-1 mx-lg-2 `} src={img1} alt="volounteers"
+                      />
               </a>
 
-              <div className="px-lg-5">
+              <div className="">
                 <p className={`${style.text}`}>I am buying tactical medical disposables, and equipment, and
                   deliver it myself to Ukraine, where it
                   is distributed directly to the people, who currently need it most. I know everyone involved
@@ -150,7 +150,7 @@ const OurProjects = () => {
           <div className={style.content}>
             <h2 className={style.h2}>2023</h2>
             <div className={style.p}>
-              <text className={`${style.text} px-lg-5`}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+              <text className={`${style.text} `}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
                 admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
                 voluptua dignissim per, habeo iusto primis ea eam.
               </text>
@@ -162,7 +162,7 @@ const OurProjects = () => {
           <div className={style.content}>
             <h2 className={style.h2}>2012</h2>
             <div className={style.p}>
-              <text className={`${style.text} px-lg-5`}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+              <text className={`${style.text} `}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
                 admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
                 voluptua dignissim per, habeo iusto primis ea eam.
               </text>
@@ -174,7 +174,7 @@ const OurProjects = () => {
           <div className={style.content}>
             <h2 className={style.h2}>2011</h2>
             <div className={style.p}>
-              <text className={`${style.text} px-lg-5`}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+              <text className={`${style.text} `}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
                 admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
                 voluptua dignissim per, habeo iusto primis ea eam.
               </text>
@@ -186,7 +186,7 @@ const OurProjects = () => {
           <div className={style.content}>
             <h2 className={style.h2}>2007</h2>
             <div className={style.p}>
-              <text className={`${style.text} px-lg-5`}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+              <text className={`${style.text} `}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
                 admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
                 voluptua dignissim per, habeo iusto primis ea eam.
               </text>

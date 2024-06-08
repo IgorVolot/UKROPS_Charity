@@ -11,28 +11,29 @@
 
 .carousel {
     transition-duration: 0.6s;
+    animation-iteration-count: infinite;
 }
 
 
 .carouselImg {
-    max-width: 50%;
+    max-width: 100%;
 }
 
-.carousel-control-next {
+.carouselControlNext {
     margin-right: 4px;
 }
 
-.carousel-control-prev {
+.carouselControlPrev {
     margin-left: 12px;
 }
 
-.carousel-control-next:hover, .carousel-control-prev:hover {
+.carouselControlNext:hover, .carouselControlPrev:hover {
     color: #a4a1a1;
 }
 
 
 
-.carousel-indicators .active {
+.carouselIndicators .active {
     margin-right: 3px;
     margin-left: 3px;
     border-style: ridge;

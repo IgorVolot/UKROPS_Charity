@@ -11,16 +11,19 @@
 
 import { Carousel } from "react-bootstrap"
 import { leoCarouselImage } from "../../../utils/constants"
-import "./imgCarousel.css"
+import styles from "./imgCarousel.module.css"
 
 const ImgCarousel = () => {
   return (
     <>
-      <Carousel className="carousel slide carousel-fade"> {leoCarouselImage.map((item, index) =>
-        <Carousel.Item key={index} >
-          <img className="d-block mx-auto border border-secondary shadow p-2" src={item} alt={`Dr.Leo ${index}`} />
-        </Carousel.Item>)
-      } </Carousel>
+      <div className={``}>
+        <Carousel className={`${styles.carousel} slide carousel-fade`}> {leoCarouselImage.map((item, index) =>
+          <Carousel.Item key={index} >
+            <img className={`${styles.carouselImg} d-block mx-auto border border-secondary shadow p-2`} src={item} alt={`Dr.Leo ${index}`} />
+          </Carousel.Item>)
+        } </Carousel>
+      </div>
+
     </>
   )
 }
