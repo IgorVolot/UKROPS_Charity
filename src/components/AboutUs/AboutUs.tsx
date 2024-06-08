@@ -26,14 +26,13 @@ const AboutUs = () => {
     <>
       <div className="d-flex justify-content-center">
         <Row md={1} className="g-4 pt-lg-4">
-          <Card className={`${styles.card} mx-3 `} border="secondary" style={{ width: "20rem", borderRadius: "0" }}>
-            <Card.Img variant="top" src={leo} alt="Leo" style={{ width: "300px", height: "auto", padding: "20px" }} />
-            <Card.Body>
+          <Card className={`${styles.card} mx-auto px-3 mx-md-2`} border="secondary" style={{ width: "19rem", borderRadius: "0" }}>
+            <Card.Img className={`${styles.img} mx-auto`} variant="top" src={leo} alt="Leo" style={{ width: "240px", height: "auto" }} />
+            <Card.Body className={`${styles.cardBody}`}>
               <Card.Title>Dr. Leo Krivskiy</Card.Title>
               <Card.Text>
                 <p className={`${styles.title} ms-5`}>Founder</p>
                 <p className={`${styles.text} mx-3`}>
-
                   {(FOUNDER_TEXT[0] && FOUNDER_TEXT[0].length > MAX_STRING_LENGTH
                     ? `${FOUNDER_TEXT[0].substring(0, MAX_STRING_LENGTH + 1)}...`
                     : FOUNDER_TEXT[0]) || ""}
@@ -45,22 +44,25 @@ const AboutUs = () => {
                   Leo Krivskiy
                 </p>
               </Card.Text>
-              <Button className={`${styles.button} `}
-                      onClick={() => {
-                        window.scrollTo({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth"
-                        })
-                        navigate("/leo")
-                      }}
-              >Learn more
-              </Button>
+              <div className={`${styles.cardBtn} d-flex`}>
+                <Button className={`${styles.button}`}
+                        onClick={() => {
+                          window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth"
+                          })
+                          navigate("/leo")
+                        }}
+                >Learn more
+                </Button>
+              </div>
+
             </Card.Body>
           </Card>
 
-          <Card className={`${styles.card} mx-3`} border="secondary" style={{ width: "20rem", borderRadius: "0" }}>
-            <Card.Img variant="top" src={anna} alt="Anna" style={{ width: "300px", height: "auto", padding: "20px" }} />
+          <Card className={`${styles.card} mx-auto px-3 mx-md-2`} border="secondary" style={{ width: "19rem", borderRadius: "0" }}>
+            <Card.Img className={`${styles.img} mx-auto`} variant="top" src={anna} alt="Anna" style={{ width: "240px", height: "auto" }} />
             <Card.Body>
               <Card.Title>Dr. Anna Hunter</Card.Title>
               <Card.Text>
@@ -77,22 +79,25 @@ const AboutUs = () => {
                   Anna Hunter
                 </p>
               </Card.Text>
-              <Button className={`${styles.button} `}
-                      onClick={() => {
-                        window.scrollTo({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth"
-                        })
-                        navigate("/anna")
-                      }}
-              >Learn more
-              </Button>
+              <div className={`${styles.cardBtn} d-flex`}>
+                <Button className={`${styles.button} `}
+                        onClick={() => {
+                          window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth"
+                          })
+                          navigate("/anna")
+                        }}
+                >Learn more
+                </Button>
+              </div>
+
             </Card.Body>
           </Card>
 
-          <Card className={`${styles.card} mx-3 `} border="secondary" style={{ width: "20rem", borderRadius: "0" }}>
-            <Card.Img variant="top" src={justas} alt="Justas" style={{ width: "300px", height: "auto", padding: "20px" }} />
+          <Card className={`${styles.card} mx-auto px-3 mx-md-2 `} border="secondary" style={{ width: "19rem", borderRadius: "0" }}>
+            <Card.Img className={`${styles.img} mx-auto`} variant="top" src={justas} alt="Justas" style={{ width: "240px", height: "auto" }} />
             <Card.Body>
               <Card.Title>Dr. Justas Mazunaitis</Card.Title>
               <Card.Text>
@@ -109,17 +114,20 @@ const AboutUs = () => {
                   Mazunaitis Justas
                 </p>
               </Card.Text>
-              <Button className={`${styles.button} `}
-                      onClick={() => {
-                        window.scrollTo({
-                          top: 0,
-                          left: 0,
-                          behavior: "smooth"
-                        })
-                        navigate("/justas")
-                      }}
-              >Learn more
-              </Button>
+              <div className={`${styles.cardBtn} d-flex`}>
+                <Button className={`${styles.button} `}
+                        onClick={() => {
+                          window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth"
+                          })
+                          navigate("/justas")
+                        }}
+                >Learn more
+                </Button>
+              </div>
+
             </Card.Body>
           </Card>
         </Row>

@@ -39,7 +39,7 @@
     font-style: normal;
     font-size: 3em;
     color: #2b2f32;
-    /*text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);*/
+    text-shadow: 3px 3px 3px rgba(80, 78, 73, 0.58);
 }
 
 .header > h2 {
@@ -51,7 +51,7 @@
     font-size: 2em;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    /*text-shadow: 0.1em 0.1em 0.1em rgba(80, 78, 73, 0.584);*/
+    text-shadow: 3px 3px 3px rgba(80, 78, 73, 0.48);
 }
 
 @media screen and (max-width: 768px) {
