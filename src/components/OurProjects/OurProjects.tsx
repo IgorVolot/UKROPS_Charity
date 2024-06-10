@@ -7,7 +7,9 @@
 /*/
 
 import style from "./our_project.module.css"
-import media from "../../assets/video/media_file.mp4"
+import leo_row from "../../assets/video/Leo_row.mp4"
+import leo_video_1 from "../../assets/video/Leo_Video_1.mp4"
+import media_1 from "../../assets/video/media_file.mp4"
 import img1 from "../../assets/pictures/img-aid_0.jpeg"
 
 const OurProjects = () => {
@@ -25,10 +27,10 @@ const OurProjects = () => {
             <h2 className={style.h2}>January 2025</h2>
             <div className={`${style.p} `}>
               <video className="float-start p-sm-0 p-md-1 mx-sm-0 mx-lg-2"
-                     style={{width: "420px", height: "auto"}}
+                     style={{ width: "420px", height: "auto" }}
                      autoPlay={true} muted={true}
                      controls={true}>
-                <source src={media} type="video/mp4" />
+                <source src={leo_row} type="video/mp4" />
               </video>
 
               <div className="">
@@ -59,10 +61,57 @@ const OurProjects = () => {
           <div className={style.content}>
             <h2 className={style.h2}>2024</h2>
             <div className={style.p}>
+              <video className="float-start p-sm-0 p-md-1 mx-sm-0 mx-lg-2"
+                     style={{ width: "420px", height: "auto" }}
+                     autoPlay={true} muted={true}
+                     controls={true}>
+                <source src={leo_video_1} type="video/mp4" />
+              </video>
+
+              <div >
+                <p className={`${style.text}`}>
+                  I support through my travels through my educational activity. Since 2014 I've been involved with my
+                  Ukrainian anesthetic colleagues both by going there organizing seminars and conferences. I know quite
+                  a few people in the medical world in Ukraine and I'm able to contact them directly and I really know
+                  their needs and respond to them of course.
+                </p>
+                <p className={`${style.text}`}>
+                  Please support us, please follow us and please keep your
+                  interest in what's going on Ukraine alive. This is vitally important that we help those people survive
+                  and save as many lives as possible. Thank you.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${style.container} ${style.left}`}>
+          <div className={style.content}>
+            <h2 className={style.h2}>2023</h2>
+            <div className={style.p}>
+              <video className="float-start p-sm-0 p-md-1 mx-sm-0 mx-lg-2"
+                     style={{ width: "420px", height: "auto" }}
+                     autoPlay={true} muted={true}
+                     controls={true}>
+                <source src={media_1} type="video/mp4" />
+              </video>
+              <text className={`${style.text} `}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
+                voluptua dignissim per, habeo iusto primis ea eam.
+              </text>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${style.container} ${style.right}`}>
+          <div className={style.content}>
+            <h2 className={style.h2}>2022</h2>
+            <div className={style.p}>
               <a href="https://www.justgiving.com/crowdfunding/leonid-krivskiy" target="_blank"
                  rel="noopener noreferrer">
                 <img className={`${style.img1} float-start p-md-1 mx-lg-2 `} src={img1} alt="volounteers"
-                      />
+                />
               </a>
 
               <div className="">
@@ -142,30 +191,6 @@ const OurProjects = () => {
 
                 <p className={`${style.text}`}>Thanks for supporting our efforts, and thank you for donating!</p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={`${style.container} ${style.left}`}>
-          <div className={style.content}>
-            <h2 className={style.h2}>2023</h2>
-            <div className={style.p}>
-              <text className={`${style.text} `}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
-                voluptua dignissim per, habeo iusto primis ea eam.
-              </text>
-            </div>
-          </div>
-        </div>
-
-        <div className={`${style.container} ${style.right}`}>
-          <div className={style.content}>
-            <h2 className={style.h2}>2012</h2>
-            <div className={style.p}>
-              <text className={`${style.text} `}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
-                voluptua dignissim per, habeo iusto primis ea eam.
-              </text>
             </div>
           </div>
         </div>

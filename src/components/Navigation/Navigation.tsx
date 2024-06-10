@@ -13,7 +13,7 @@ import Navbar from "react-bootstrap/Navbar"
 import logo_small from "../../assets/logo/icon_ukrops-2x.png"
 import { logoStyle } from "../../utils/constants"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faLinkedin, faSquareInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faLinkedin, faSquareInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import style from "./navigation.module.css"
 import { NavLink, useLocation, useNavigate } from "react-router-dom"
@@ -211,13 +211,12 @@ function Navigation() {
                   <Nav.Link href="https://www.facebook.com/profile.php?id=100009578859571" target="_blank">
                     <FontAwesomeIcon className={`${style.navIcon} `} icon={faFacebook} />
                   </Nav.Link>
-                  <Nav.Link href="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr"
-                            target="_blank">
+                  <Nav.Link href="https://www.instagram.com/krivski?igsh=a3F6cTEzYm0yYTl5&utm_source=qr" target="_blank">
                     <FontAwesomeIcon className={`${style.navIcon} `} icon={faSquareInstagram} />
                   </Nav.Link>
-                  {/*<Nav.Link href="">*/}
-                  {/*  <FontAwesomeIcon className={`${style.navIcon} `} icon={faYoutube} style={{ color: "#FFD43B" }} />*/}
-                  {/*</Nav.Link>*/}
+                  <Nav.Link href="https://www.youtube.com/@leosrow" target="_blank">
+                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faYoutube} style={{ color: "#FFD43B" }} />
+                  </Nav.Link>
                   <Nav.Link href="mailto:leo@ukropsmedical.org">
                     <FontAwesomeIcon className={`${style.navIcon}`} icon={faEnvelope}  />
                   </Nav.Link>
