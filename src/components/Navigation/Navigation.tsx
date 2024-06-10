@@ -215,7 +215,7 @@ function Navigation() {
                     <FontAwesomeIcon className={`${style.navIcon} `} icon={faSquareInstagram} />
                   </Nav.Link>
                   <Nav.Link href="https://www.youtube.com/@leosrow" target="_blank">
-                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faYoutube} style={{ color: "#FFD43B" }} />
+                    <FontAwesomeIcon className={`${style.navIcon} `} icon={faYoutube} />
                   </Nav.Link>
                   <Nav.Link href="mailto:leo@ukropsmedical.org">
                     <FontAwesomeIcon className={`${style.navIcon}`} icon={faEnvelope}  />

@@ -132,6 +132,9 @@
         width: 12rem;
         margin: 2rem auto;
     }
+    .article {
+        font-size: 1.5em;
+    }
 }
 
 

@@ -7,8 +7,6 @@
 /*/
 
 import style from "./our_project.module.css"
-import leo_row from "../../assets/video/Leo_row.mp4"
-import leo_video_1 from "../../assets/video/Leo_Video_1.mp4"
 import media_1 from "../../assets/video/media_file.mp4"
 import img1 from "../../assets/pictures/img-aid_0.jpeg"
 
@@ -26,13 +24,9 @@ const OurProjects = () => {
 
             <h2 className={style.h2}>January 2025</h2>
             <div className={`${style.p} `}>
-              <video className="float-start p-sm-0 p-md-1 mx-sm-0 mx-lg-2"
-                     style={{ width: "420px", height: "auto" }}
-                     autoPlay={true} muted={true}
-                     controls={true}>
-                <source src={leo_row} type="video/mp4" />
-              </video>
-
+              <iframe title="Leo-Row-Atlantic" width="420" height="315"
+                      src="https://www.youtube.com/embed/wKWVc-5VPFA?autoplay=1&mute=1">
+              </iframe>
               <div className="">
                 <p className={`${style.text}`}>In January 2025, Leo will embark on the extraordinary challenge of <a
                   href="https://www.leosrow.com/the-challenge" rel="noopener noreferrer" target="_blank">
@@ -61,14 +55,10 @@ const OurProjects = () => {
           <div className={style.content}>
             <h2 className={style.h2}>2024</h2>
             <div className={style.p}>
-              <video className="float-start p-sm-0 p-md-1 mx-sm-0 mx-lg-2"
-                     style={{ width: "420px", height: "auto" }}
-                     autoPlay={true} muted={true}
-                     controls={true}>
-                <source src={leo_video_1} type="video/mp4" />
-              </video>
-
-              <div >
+              <iframe title="Leo-Row-Atlantic" width="420" height="315"
+                      src="https://www.youtube.com/embed/z1ZCNKs-Ies?autoplay=1&mute=1">
+              </iframe>
+              <div>
                 <p className={`${style.text}`}>
                   I support through my travels through my educational activity. Since 2014 I've been involved with my
                   Ukrainian anesthetic colleagues both by going there organizing seminars and conferences. I know quite
