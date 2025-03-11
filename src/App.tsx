@@ -28,7 +28,7 @@ const App = () => {
     <div className="App container-fluid">
       <Routes>
         <Route path="/" element={<MainLayOut />}>
-          {[``, `/`, "/home"].map(path => <Route key={path} path={path} element={<Home />} />)}
+          {[``, `/`, `/home`].map(path => <Route key={path} path={path} element={<Home />} />)}
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/leo" element={<LeoKrivskiy />} />
           <Route path="/anna" element={<AnnaHunter />} />
